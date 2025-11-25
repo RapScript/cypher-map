@@ -1,0 +1,870 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.936131,
+          51.532719
+        ]
+      },
+      "properties": {
+        "description": "Cypher\nletzter Freitag im Monat alle 2 Monate\nhttps://www.facebook.com/HipHopStammtischGoettingen\n\nVinyl-Reservat\nRote Straße 17, 37073 Göttingen",
+        "name": " Hip Hop Stammtisch"
+      },
+      "id": "2hjLG"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.342521,
+          48.218112
+        ]
+      },
+      "properties": {
+        "description": "etwa 1 mal pro Monat\nhttps://1bm.at/freestylesession/\n\nEinbaumöbel\nGürtelbogen 97, 1090 Wien",
+        "name": "1bm Freestylesession",
+        "_umap_options": {
+          "showLabel": true,
+          "labelInteractive": true,
+          "iconClass": "Default",
+          "labelDirection": "right"
+        }
+      },
+      "id": "tWHF9"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.451814,
+          52.471146
+        ]
+      },
+      "properties": {
+        "osm_id": 9501863918,
+        "country": "Deutschland",
+        "city": "Berlin",
+        "countrycode": "DE",
+        "postcode": "12055",
+        "locality": "Rixdorf",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "29",
+        "street": "Saalestraße",
+        "district": "Neukölln",
+        "osm_value": "bar",
+        "name": "2x4 Open Mic",
+        "_umap_options": {
+          "labelDirection": "bottom"
+        },
+        "description": "Jeden Donnerstag! Außer den 3. im Monat!\nhttps://www.instagram.com/2x4_openmic/\n\nZweiMalVier\nSaalestraße 29, 12055 Berlin"
+      },
+      "id": "15KXv"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.939919,
+          50.927254
+        ]
+      },
+      "properties": {
+        "osm_id": 5624509121,
+        "country": "Deutschland",
+        "city": "Köln",
+        "countrycode": "DE",
+        "postcode": "50674",
+        "locality": "Studentenviertel",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "37",
+        "street": "Luxemburger Straße",
+        "district": "Neustadt/Süd",
+        "osm_value": "nightclub",
+        "name": "1624 Bap Beatz",
+        "state": "Nordrhein-Westfalen",
+        "description": "Open Mic\njeden 2. Mittwoch im Monat\nhttps://www.instagram.com/1624bapbeatz/\n\nVeedel Club\nLuxemburger Str. 37, 50674 Köln",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "sxVfY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.691591,
+          50.105106
+        ]
+      },
+      "properties": {
+        "country": "Deutschland",
+        "city": "Frankfurt am Main",
+        "countrycode": "DE",
+        "postcode": "60594",
+        "locality": "Sachsenhausen",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "3",
+        "street": "Klappergasse",
+        "district": "Sachsenhausen Nord",
+        "osm_value": "pub",
+        "name": "1624 Bap Beatz FFM",
+        "state": "Hessen",
+        "description": "Open Mic\njeden 1. Donnerstag im Monat\nhttps://www.instagram.com/1624bapbeatz/\n\nSchöppche Keller\nKlappergasse 3, 60594 Frankfurt am Main",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "nMWkf"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.934044,
+          49.786096
+        ]
+      },
+      "properties": {
+        "description": "Cypher & als Special auch Battles\njeden  Monat Termine auf Facebook\nhttp://www.facebook.com/beatsundlyrics\n\nDie Kellerperle\nAm Studentenhaus, 97072 Würzburg",
+        "name": "Beats & Lyrics",
+        "_umap_options": {
+          "showLabel": true,
+          "labelInteractive": false,
+          "labelDirection": "right"
+        }
+      },
+      "id": "DNoXt"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.399791,
+          52.507383
+        ]
+      },
+      "properties": {
+        "name": "camp:cypha\t",
+        "description": "Jeden Freitag Cypher im Anschluss an Kenjis Beat Kurs\n\nAlte Feuerwache \nJeden Freitag\nhttps://www.facebook.com/campcypha\t\n\nOranienstraße 96, 10969 Berlin",
+        "_umap_options": {
+          "iconClass": "Default",
+          "showLabel": true,
+          "labelDirection": "top",
+          "labelInteractive": true
+        }
+      },
+      "id": "B6bHV"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.962003,
+          53.547539
+        ]
+      },
+      "properties": {
+        "osm_id": 1022509474,
+        "osm_type": "N",
+        "country": "Germany",
+        "osm_key": "amenity",
+        "housenumber": "11",
+        "city": "Hamburg",
+        "street": "Erichstraße",
+        "osm_value": "bar",
+        "postcode": "20359",
+        "name": "CLUB 27",
+        "state": "Hamburg",
+        "description": "Cypher & Live Acts\nJeden 1. Donnerstag im Monat\nhttps://www.facebook.com/Club27freestyle/\n\nKOMET Musik Bar\nErichstrasse 11, 20359 Hamburg, Germany",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "p4MwA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.899863,
+          48.369372
+        ]
+      },
+      "properties": {
+        "osm_id": 70187959,
+        "osm_type": "W",
+        "extent": [
+          10.8997453,
+          48.3694242,
+          10.9000004,
+          48.3692741
+        ],
+        "country": "Germany",
+        "osm_key": "amenity",
+        "housenumber": "4",
+        "city": "Augsburg",
+        "street": "Barfüßerstraße",
+        "osm_value": "theatre",
+        "postcode": "86150",
+        "name": "Dem HipHop sein Haus",
+        "state": "Bavaria",
+        "description": "Cypher\nJeden zweiten Mittwoch im Monat\nhttps://www.instagram.com/dem_hiphop_sein_haus/\nhttps://www.facebook.com/pg/demhiphopseinhaus/\n\nKulturhaus Kresslesmühle\nBarfüßerstraße 4, 86150 Augsburg\n"
+      },
+      "id": "0PPMw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.892788,
+          48.373037
+        ]
+      },
+      "properties": {
+        "osm_id": 765559211,
+        "country": "Deutschland",
+        "city": "Augsburg",
+        "countrycode": "DE",
+        "postcode": "86152",
+        "locality": "Georgsviertel",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "7",
+        "street": "Alte Gasse",
+        "district": "Innenstadt",
+        "osm_value": "cafe",
+        "name": "Dem HipHop sein Haus",
+        "state": "Bayern",
+        "description": "Cypher\njeden letzten Mittwoch im Monat ab 21:00 Uhr\nhttps://www.instagram.com/dem_hiphop_sein_haus/\nhttps://www.facebook.com/pg/demhiphopseinhaus/\n\nKulturcafé Neruda\nAlte Gasse 7, 86152 Augsburg\n"
+      },
+      "id": "ew32q"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.983922,
+          51.48965
+        ]
+      },
+      "properties": {
+        "osm_id": 1389643713,
+        "osm_type": "N",
+        "country": "Germany",
+        "osm_key": "amenity",
+        "housenumber": "242",
+        "city": "Halle (Saale)",
+        "street": "Berliner Straße",
+        "osm_value": "nightclub",
+        "postcode": "06112",
+        "name": "Die Montagsmaler",
+        "state": "Saxony-Anhalt",
+        "description": "Cypher\nJeden Montag 20:00 - 23:00 Uhr\nhttps://halle365.de/veranstaltung/montagsmaler\n\nCharles Bronson\nBerliner Str. 242, 06112 Halle (Saale)",
+        "_umap_options": {
+          "labelDirection": "top"
+        }
+      },
+      "id": "05FN6"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.408996,
+          52.515653
+        ]
+      },
+      "properties": {
+        "osm_id": 24271874,
+        "extent": [
+          13.4087837,
+          52.5158963,
+          13.4094736,
+          52.5154107
+        ],
+        "country": "Deutschland",
+        "city": "Berlin",
+        "countrycode": "DE",
+        "postcode": "10179",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "building",
+        "housenumber": "2",
+        "street": "Am Krögel",
+        "district": "Mitte",
+        "osm_value": "commercial",
+        "name": "DNA X Flowjam",
+        "description": "Cypher plus Live Acts\njeden Mittwoch 18:00 Uhr\nhttps://www.instagram.com/flowjam030/\nhttps://www.instagram.com/nightart.club/\n\nAlte Münze\nMolkenmarkt 2, 10179 Berlin"
+      },
+      "id": "onSLt"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.774755,
+          51.22952
+        ]
+      },
+      "properties": {
+        "osm_id": 51835845,
+        "extent": [
+          6.7746955,
+          51.2295802,
+          6.7748153,
+          51.2294561
+        ],
+        "country": "Deutschland",
+        "city": "Düsseldorf",
+        "countrycode": "DE",
+        "postcode": "40213",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "building",
+        "housenumber": "20",
+        "street": "Ratinger Straße",
+        "district": "Altstadt",
+        "osm_value": "yes",
+        "state": "Nordrhein-Westfalen",
+        "name": "Düsselbars",
+        "description": "Cypher\n1 mal im Monat siehe Insta\nhttps://www.instagram.com/janek_musik\n\nJugendKULTURcafé Franzmann\nGemeinschaftsraum\nRatinger Straße 20, 40213 Düsseldorf"
+      },
+      "id": "BQnj3"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.374122,
+          52.545033
+        ]
+      },
+      "properties": {
+        "description": "Session mit Band\n\nam 1. oder 2. Freitag in Monat \nhttps://www.instagram.com/eastwestsessions/\nhttps://www.facebook.com/eastwestsessions/\n\nPanke 5. Hof\nGerichtstraße 23, 13347 Berlin",
+        "name": "East-West Sessions"
+      },
+      "id": "dbhlJ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.505487,
+          51.325315
+        ]
+      },
+      "properties": {
+        "osm_id": 350109920,
+        "extent": [
+          9.5051451,
+          51.325507,
+          9.5057626,
+          51.3251381
+        ],
+        "country": "Deutschland",
+        "city": "Kassel",
+        "countrycode": "DE",
+        "postcode": "34127",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "building",
+        "housenumber": "10",
+        "street": "Universitätsplatz",
+        "district": "Nord (Holland)",
+        "osm_value": "university",
+        "name": "Färberei Cypher",
+        "state": "Hessen",
+        "_umap_options": {
+          "labelDirection": "right"
+        },
+        "description": "Auftritte & Open Mic\n1-2 mal im Monat\nhttps://www.instagram.com/kulturzentrum_faerberei/\n\nStudihaus\nUniversitätsplatz 10, Kassel"
+      },
+      "id": "9M4bV"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.440802,
+          52.472419
+        ]
+      },
+      "properties": {
+        "name": "Flowjam 030",
+        "description": "Cypher\njeden Montag\nhttps://www.instagram.com/flowjam030/\n\nLittle Stage\nJonasstraße 1, 12053 Berlin\n"
+      },
+      "id": "doyUw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.983351,
+          53.555234
+        ]
+      },
+      "properties": {
+        "osm_id": 43379340,
+        "extent": [
+          9.9832134,
+          53.5553806,
+          9.9834871,
+          53.5551197
+        ],
+        "country": "Deutschland",
+        "city": "Hamburg",
+        "countrycode": "DE",
+        "postcode": "20355",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "building",
+        "housenumber": "34a",
+        "street": "Valentinskamp",
+        "district": "Neustadt",
+        "osm_value": "yes",
+        "name": "Gaengecypher battle",
+        "description": "Battle\nEtwa 1 mal im Monat siehe Insta\nhttps://www.instagram.com/gaengecypher\n\nFabrique \nValentinskamp 34a (Zugang von der Speckstraße)\n20355 Hamburg\n",
+        "_umap_options": {
+          "labelDirection": "top"
+        }
+      },
+      "id": "ZDjIb"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.505598,
+          52.45965
+        ]
+      },
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 503968055,
+        "country": "Deutschland",
+        "osm_key": "place",
+        "housenumber": "137",
+        "city": "Berlin",
+        "street": "Schnellerstraße",
+        "countrycode": "DE",
+        "district": "Niederschöneweide",
+        "osm_value": "house",
+        "postcode": "12439",
+        "type": "house",
+        "description": "Cypher & Live Acts & Battle\netwa einmal im Monat\nhttps://www.facebook.com/insidehip\n\nBaergarten\nSchnellerstraße 137\n12439 Berlin",
+        "name": "Hip Inside",
+        "_umap_options": {
+          "labelDirection": "right"
+        }
+      },
+      "id": "JcyVc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.948713,
+          50.968505
+        ]
+      },
+      "properties": {
+        "osm_id": 3224171453,
+        "country": "Deutschland",
+        "city": "Köln",
+        "countrycode": "DE",
+        "postcode": "50733",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "92",
+        "street": "Mauenheimer Straße",
+        "district": "Nippes",
+        "osm_value": "community_centre",
+        "name": "HipHop Netzwerk Nippes Cypher",
+        "state": "Nordrhein-Westfalen",
+        "description": "Cypher\n1 mal im Monat 17:00 -19:00 siehe FB \nhttps://www.facebook.com/buergerzentrum.nippes/events\n\nBürgerzentrum Nippes - Altenberger Hof\nMauenheimer Str. 92, Köln"
+      },
+      "id": "MAi2l"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.554895,
+          48.122194
+        ]
+      },
+      "properties": {
+        "osm_id": 1188082132,
+        "extent": [
+          11.5545336,
+          48.1230248,
+          11.5557532,
+          48.121454
+        ],
+        "country": "Deutschland",
+        "city": "München",
+        "countrycode": "DE",
+        "postcode": "80337",
+        "locality": "Am Schlachthof",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "amenity",
+        "housenumber": "45",
+        "street": "Tumblingerstraße",
+        "district": "Am Schlachthof",
+        "osm_value": "arts_centre",
+        "name": "HipHop Open Tracks",
+        "state": "Bayern",
+        "_umap_options": {
+          "labelDirection": "bottom"
+        },
+        "description": "Open Mic und Acts\n2 - 3 gebuchte Acts & am Ende Open Mic\neinmal im Monat - meist am 3. Mittwoch im Monat\n\nhttps://www.bahnwaerterthiel.de/\nhttps://www.facebook.com/bahnwaerterthiel1\n\nBahnwärter Thiel\nTumblingerstraße 45, München"
+      },
+      "id": "euk8B"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444661,
+          47.066242
+        ]
+      },
+      "properties": {
+        "osm_id": 1369216387,
+        "osm_type": "N",
+        "country": "Austria",
+        "osm_key": "amenity",
+        "housenumber": "9",
+        "city": "Graz",
+        "street": "Mondscheingasse",
+        "osm_value": "bar",
+        "postcode": "8010",
+        "state": "Styria",
+        "description": "Cypher\n1. Mittwoch im Monat\nhttps://www.facebook.com/noedgegrz/\n\nMusic-House\nMondscheingasse 9, 8010 Graz",
+        "name": "Moonshine Cypher",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "6vfDg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.354298,
+          51.330209
+        ]
+      },
+      "properties": {
+        "description": "Cypher jeden Dienstag abwechselnde Locations Infos auf Instagram\nhttps://www.instagram.com/omad_rap/\n\nim Sommer draußen",
+        "name": "OMAD Open Mic am Dienstag",
+        "_umap_options": {
+          "labelDirection": "right"
+        }
+      },
+      "id": "3ou0c"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.537413,
+          52.024006
+        ]
+      },
+      "properties": {
+        "osm_id": 263682614,
+        "extent": [
+          8.5372609,
+          52.0241413,
+          8.5375683,
+          52.02394
+        ],
+        "country": "Deutschland",
+        "city": "Bielefeld",
+        "countrycode": "DE",
+        "postcode": "33602",
+        "type": "house",
+        "osm_type": "W",
+        "osm_key": "amenity",
+        "housenumber": "2",
+        "street": "Kesselbrink",
+        "district": "Mitte",
+        "osm_value": "community_centre",
+        "name": "Open Mic im Grünen Würfel",
+        "state": "Nordrhein-Westfalen",
+        "_umap_options": {
+          "labelDirection": "left"
+        },
+        "description": "Open Mic\njeden 1. Mittwoch 18-22 Uhr \nhttps://www.instagram.com/crazienabz/\n\nGrüner Würfel\nKesselbrink 2, 33602 Bielefeld"
+      },
+      "id": "8X3Te"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.907635,
+          50.948694
+        ]
+      },
+      "properties": {
+        "osm_id": 327668430,
+        "osm_type": "W",
+        "extent": [
+          6.9075549,
+          50.9487343,
+          6.9077044,
+          50.948639
+        ],
+        "country": "Germany",
+        "osm_key": "amenity",
+        "housenumber": "190",
+        "city": "Cologne",
+        "street": "Oskar-Jäger-Straße",
+        "osm_value": "music_venue",
+        "postcode": "50825",
+        "name": "Pass da Mic",
+        "state": "North Rhine-Westphalia",
+        "description": "Cypher\njeden ersten Mittwoch im Monat\n\nhttps://www.facebook.com/Passdamiccgn/\nhttps://www.instagram.com/passdamickoeln/\n\nSonic Ballroom\nOskar-Jäger-Strasse 190, 50825 Köln",
+        "_umap_options": {
+          "labelDirection": "bottom"
+        }
+      },
+      "id": "BTfME"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.310892,
+          47.041957
+        ]
+      },
+      "properties": {
+        "osm_id": 506884232,
+        "osm_type": "N",
+        "country": "Switzerland",
+        "osm_key": "amenity",
+        "city": "Lucerne",
+        "street": "Industriestrasse",
+        "osm_value": "bar",
+        "postcode": "6005",
+        "name": "Rapanoia",
+        "state": "Luzern",
+        "description": "Open Mic\njeden ersten Donnerstag im Monat\nhttps://www.facebook.com/groups/184482108239086/\n\nBar 59\nIndustriestrasse 5, 6005 Luzern"
+      },
+      "id": "OwvHi"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.681083,
+          53.863884
+        ]
+      },
+      "properties": {
+        "osm_id": 496825544,
+        "country": "Deutschland",
+        "city": "Lübeck",
+        "countrycode": "DE",
+        "postcode": "23552",
+        "type": "house",
+        "osm_type": "N",
+        "osm_key": "amenity",
+        "housenumber": "18",
+        "street": "An der Obertrave",
+        "district": "Innenstadt",
+        "osm_value": "pub",
+        "name": "Reimbar",
+        "state": "Schleswig-Holstein",
+        "description": "Cypher\nEtwa 1 mal im Monat siehe FB\nhttps://www.facebook.com/Reimbar\n\nFunambules\nAn d. Obertrave 18, 23552 Lübeck",
+        "_umap_options": {
+          "labelDirection": "top"
+        }
+      },
+      "id": "5azQ5"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.033814,
+          50.980258
+        ]
+      },
+      "properties": {
+        "name": "Retronom Open Mic",
+        "description": "Open Mic\nab und zu Freitags siehe https://www.instagram.com/retronom_erfurt/\nhttps://www.facebook.com/retronom.bar/\n\nRetronom\nJohannesstraße 17a, 99999 Erfurt",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "etZDr"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.983472,
+          53.555018
+        ]
+      },
+      "properties": {
+        "name": "Sketch Corner",
+        "description": "Immer Sketchen manchmal Cypher\nam letztten Mittwoch im Monat in der Fabrique \nhttps://www.facebook.com/Sketch-Corner-265140404254941/\n\nFabrique \nValentinskamp 34a (Zugang von der Speckstraße)\n20355 Hamburg",
+        "_umap_options": {
+          "labelDirection": "right"
+        }
+      },
+      "id": "fSeIR"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.580276,
+          50.93121
+        ]
+      },
+      "properties": {
+        "description": "Cypher\nEinmal im Monat Donnerstags Termine auf Facebook\nhttps://www.facebook.com/SmellsLikeRap/\n\nCafé Wagner\nWagnergasse 26, 07743 Jena",
+        "name": "Smells like rap",
+        "_umap_options": {
+          "labelDirection": "bottom"
+        }
+      },
+      "id": "sSqB1"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.215796,
+          51.477977
+        ]
+      },
+      "properties": {
+        "osm_id": 855292214,
+        "osm_type": "N",
+        "country": "Germany",
+        "osm_key": "amenity",
+        "housenumber": "45",
+        "city": "Bochum",
+        "street": "Viktoriastraße",
+        "osm_value": "nightclub",
+        "postcode": "44787",
+        "name": "Superior Session",
+        "state": "North Rhine-Westphalia",
+        "description": "Cypher\nJeden 1. Donnerstag\nhttp://superiorsession.com\nhttp://www.facebook.com/superiorsessionbochum\n\nFahrgemeinschaften aus Essen und Dortmund siehe Facebook\n\nTrompete\nViktoriastr 45, 44787 Bochum"
+      },
+      "id": "15wEf"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9914,
+          53.456691
+        ]
+      },
+      "properties": {
+        "name": "The Bench",
+        "description": "einmal pro im Monat checkt Facebook für die Events\nhttps://www.facebook.com/thebench\n\nStellwerk\nHamburg",
+        "_umap_options": {
+          "labelDirection": "bottom"
+        }
+      },
+      "id": "QMKSA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.45513,
+          52.507488
+        ]
+      },
+      "properties": {
+        "name": "The Swag Jam",
+        "description": "erst The Swag  solo danach Open Mic mit Band\nJeden Dienstag \nhttp://the-swag.com/jam.html\n\nBADEHAUS Szimpla\nRevaler Str. 99, 10245 Berlin"
+      },
+      "id": "bZyWi"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.499466,
+          51.325803
+        ]
+      },
+      "properties": {
+        "osm_id": 5858054491,
+        "osm_type": "N",
+        "country": "Germany",
+        "osm_key": "place",
+        "housenumber": "45a",
+        "city": "Kassel",
+        "street": "Mombachstraße",
+        "osm_value": "house",
+        "postcode": "34127",
+        "state": "Hesse",
+        "description": "Cypher\njeden 3. Freitag im Monat\nhttps://www.instagram.com/verbalessencefreestyle\n\nKarnak\nMombachstraße 45a, 34127 Kassel",
+        "name": "Verbal Essence",
+        "_umap_options": {
+          "labelDirection": "left"
+        }
+      },
+      "id": "X89VI"
+    }
+  ]
+}
