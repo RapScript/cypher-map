@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Italy Freestyle Cyphers Map</title>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<style>
+  body { margin:0; font-family: sans-serif; }
+  #map { height: 100vh; width: 100%; }
+
+  .control {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    font-size: 13px;
+  }
+
+  .legend {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    font-size: 12px;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<div class="control" id="dayControl">
+  <b>Giorni della settimana</b><br>
+</div>
+
+<div class="legend" id="legend"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+/* =========================
+   MAP
+========================= */
+const map = L.map('map').setView([43.0, 12.5], 6);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap'
+}).addTo(map);
+
+/* =========================
+   DAY META (single source)
+========================= */
+const dayMeta = {
+  Mon: { it: "Lunedì",    color: "#1f77b4" },
+  Tue: { it: "Martedì",   color: "#ff7f0e" },
+  Wed: { it: "Mercoledì", color: "#2ca02c" },
+  Thu: { it: "Giovedì",   color: "#9467bd" },
+  Fri: { it: "Venerdì",   color: "#d62728" },
+  Sun: { it: "Domenica",  color: "#8c564b" }
+};
+
+/* =========================
+   EVENTS (58)
+========================= */
+const events = [
+  {city:"Trento",name:"Scala di Trento",day:"Fri",lat:46.07,lng:11.12,link:"https://www.instagram.com/scaladitrento"},
+  {city:"Fiume Veneto",name:"Tocai Cypher",day:"Fri",lat:45.93,lng:12.73,link:"https://www.instagram.com/tocai.cypher"},
+  {city:"Treviso",name:"Le Mura Freestyle Treviso",day:"Fri",lat:45.67,lng:12.24,link:"https://www.instagram.com/le.mura.freestyle_treviso"},
+  {city:"Paderno Dugnano",name:"Rappaderno",day:"Fri",lat:45.57,lng:9.16,link:"https://www.instagram.com/rappaderno.037"},
+  {city:"Vicenza",name:"Rimerie Vicentine",day:"Wed",lat:45.55,lng:11.54,link:"https://www.instagram.com/rimerievicentine"},
+  {city:"Brescia",name:"Muretto di Brescia",day:"Fri",lat:45.54,lng:10.21,link:"https://www.instagram.com/muretto_dibrescia"},
+  {city:"Milano",name:"Muretto Milano",day:"Wed",lat:45.46,lng:9.19,link:"https://www.instagram.com/muretto.milano"},
+  {city:"Vigonza",name:"Muretto di Vigonza",day:"Fri",lat:45.43,lng:11.98,link:"https://www.instagram.com/boschetto.mk"},
+  {city:"Venezia",name:"Piramidi Freestyle Cypher",day:"Mon",lat:45.44,lng:12.33,link:"https://www.instagram.com/piramidifreestylecypher"},
+  {city:"Verona",name:"IL MATTONE DI VERONA",day:"Fri",lat:45.44,lng:10.99,link:"https://www.instagram.com/mattone_vr"},
+  {city:"Padova",name:"Fungo Micelio",day:"Tue",lat:45.41,lng:11.88,link:"https://www.instagram.com/fungo.micelio"},
+  {city:"Chioggia",name:"Freesta Rosa Cypher",day:"Tue",lat:45.22,lng:12.28,link:"https://www.instagram.com/freestarosacypher"},
+  {city:"Pavia",name:"PVCypha",day:"Fri",lat:45.18,lng:9.16,link:"https://www.instagram.com/tretorripvc"},
+  {city:"Cremona",name:"Il Torrazzo di Cremona",day:"Fri",lat:45.13,lng:10.02,link:"https://www.instagram.com/iltorrazzocr"},
+  {city:"Torino",name:"Regio Freestyle Torino",day:"Wed",lat:45.07,lng:7.69,link:"https://www.instagram.com/regio_freestyle_torino"},
+  {city:"Ferrara",name:"Freestyle Darsena",day:"Mon",lat:44.84,lng:11.62,link:"https://www.instagram.com/freestyledarsena"},
+  {city:"Parma",name:"Il Cerchio",day:"Fri",lat:44.80,lng:10.33,link:"https://www.instagram.com/ilcerchio.pr"},
+  {city:"Reggio Emilia",name:"Mureggio Free",day:"Wed",lat:44.70,lng:10.63,link:"https://www.instagram.com/mureggio_free"},
+  {city:"Bologna",name:"SANFRA Bolo",day:"Tue",lat:44.49,lng:11.34,link:"https://www.instagram.com/sanfra.bo"},
+  {city:"Lugo",name:"LA LOGGIA",day:"Fri",lat:44.42,lng:11.91,link:"https://www.instagram.com/loggialugofreestyle"},
+  {city:"Genova",name:"Muretto di Genova",day:"Wed",lat:44.40,lng:8.94,link:"https://www.instagram.com/leaguria/"},
+  {city:"Genova",name:"Rosse Cypher",day:"Mon",lat:44.40,lng:8.94,link:"https://www.instagram.com/rossecypha/"},
+  {city:"Carrara",name:"Fortitudo Mea in Rap",day:"Wed",lat:44.08,lng:10.10,link:"https://www.instagram.com/fortitudo_rap"},
+  {city:"Santarcangelo",name:"Muretto Santarcangelo",day:"Wed",lat:44.06,lng:12.45,link:"https://www.instagram.com/murettosantarcangelo"},
+  {city:"Imperia",name:"Muretto di Imperia",day:"Mon",lat:43.89,lng:8.03,link:"https://www.instagram.com/ligunionevents/"},
+  {city:"Prato",name:"Muraglia Prato",day:"Fri",lat:43.88,lng:11.10,link:"https://www.instagram.com/muraglia.prato"},
+  {city:"Firenze",name:"GIGLIO aka MURETTO DI FIRENZE",day:"Fri",lat:43.77,lng:11.25,link:"https://www.instagram.com/giglio_fi"},
+  {city:"Pontassieve",name:"Sieveflow",day:"Wed",lat:43.78,lng:11.43,link:"https://www.instagram.com/sieveflow"},
+  {city:"Empoli",name:"Stadivm Technique",day:"Sun",lat:43.72,lng:10.95,link:"https://www.instagram.com/stadivm_technique"},
+  {city:"Ancona",name:"Plaza",day:"Fri",lat:43.62,lng:13.52,link:"https://www.instagram.com/tredueunoplaza"},
+  {city:"Perugia",name:"Muretto Perugia",day:"Fri",lat:43.11,lng:12.39,link:"https://www.instagram.com/muretto.pg"},
+  {city:"Teramo",name:"Teramo Cypher",day:"Fri",lat:42.66,lng:13.70,link:"https://www.instagram.com/teramocypher"},
+  {city:"Pescara",name:"FRP Freestyle Reunion Pescara",day:"Fri",lat:42.46,lng:14.21,link:"https://www.instagram.com/freestylereunionpescara"},
+  {city:"Viterbo",name:"Barre Faul",day:"Wed",lat:42.42,lng:12.10,link:"https://www.instagram.com/barre_faul"},
+  {city:"Guidonia",name:"Alcyone Flow Freestyle",day:"Tue",lat:41.99,lng:12.72,link:"https://www.instagram.com/alcyoneflowfreestyle"},
+  {city:"Roma",name:"ATENEO",day:"Fri",lat:41.90,lng:12.49,link:"https://www.instagram.com/ateneorm"},
+  {city:"Barletta",name:"Colossus Cypher",day:"Tue",lat:41.32,lng:16.28,link:"https://www.instagram.com/colossus.cypher"},
+  {city:"Bari",name:"Rossani Cypher",day:"Wed",lat:41.12,lng:16.87,link:"https://www.instagram.com/rossani.bari"},
+  {city:"Bitonto",name:"Beatonto Cypher",day:"Tue",lat:41.11,lng:16.69,link:"https://www.instagram.com/beatonto_cypher"},
+  {city:"Brindisi",name:"Br Cypher",day:"Tue",lat:40.64,lng:17.94,link:"https://www.instagram.com/brcypher"},
+  {city:"Massafra",name:"Massypher",day:"Tue",lat:40.59,lng:17.11,link:"https://www.instagram.com/massypher"},
+  {city:"Taranto",name:"2MARI Cypher",day:"Fri",lat:40.47,lng:17.24,link:"https://www.instagram.com/2maricypher"},
+  {city:"Taranto",name:"Tamburi Cypher",day:"Sun",lat:40.47,lng:17.24,link:"https://www.instagram.com/tamburicypher"},
+  {city:"Lecce",name:"Le Cypher",day:"Fri",lat:40.35,lng:18.17,link:"https://www.instagram.com/lecce.cypher"},
+  {city:"Salento",name:"Nardò Cypher",day:"Fri",lat:40.18,lng:18.03,link:"https://www.instagram.com/nardo.cypher"},
+  {city:"Porto Cesareo",name:"Cisaypher",day:"Mon",lat:40.26,lng:17.89,link:"https://www.instagram.com/cisaypher"},
+  {city:"Rende",name:"Cosenza Campus Cypher",day:"Fri",lat:39.33,lng:16.18,link:"https://www.instagram.com/cosenzacampuscypher"},
+  {city:"Cosenza",name:"Versum Cosenza",day:"Tue",lat:39.30,lng:16.25,link:"https://www.instagram.com/versumcosenza"},
+  {city:"Cagliari",name:"Bastione Freestyle Cagliari",day:"Sun",lat:39.22,lng:9.12,link:"https://www.instagram.com/bastione_freestyle_cagliari"},
+  {city:"Milazzo",name:"Bonsai Cypher",day:"Fri",lat:38.22,lng:15.24,link:"https://www.instagram.com/bonsai_cypher"},
+  {city:"Messina",name:"Stretto Cypher",day:"Wed",lat:38.19,lng:15.56,link:"https://www.instagram.com/strettocypher"},
+  {city:"Palermo",name:"Muster Palermo",day:"Tue",lat:38.12,lng:13.36,link:"https://www.instagram.com/musterpalermo"},
+  {city:"Catania",name:"Panchine Experience",day:"Tue",lat:37.50,lng:15.08,link:"https://www.instagram.com/panchine_exp"},
+  {city:"Canicattì",name:"Trinchera",day:"Fri",lat:37.36,lng:13.85,link:"https://www.instagram.com/trinchera.muretto"},
+  {city:"Agrigento",name:"Underdogs",day:"Wed",lat:37.31,lng:13.58,link:"https://www.instagram.com/underdogs_ag"},
+  {city:"Siracusa",name:"Muretto Siracusa",day:"Fri",lat:37.07,lng:15.29,link:"https://www.instagram.com/muretto.siracusa"},
+  {city:"Ragusa",name:"Il Muretto di Ragusa",day:"Tue",lat:36.93,lng:14.73,link:"https://www.instagram.com/muretto.ragusa"},
+  {city:"Porto Empedocle",name:"LA ROCCA MURETTO",day:"Fri",lat:37.29,lng:13.52,link:"https://www.instagram.com/la_rocca.freestyle"}
+];
+
+/* =========================
+   MARKERS
+========================= */
+const markers = [];
+
+events.forEach(e => {
+  const meta = dayMeta[e.day];
+
+  const m = L.circleMarker([e.lat, e.lng], {
+    radius: 7,
+    color: meta.color,
+    fillColor: meta.color,
+    fillOpacity: 0.9,
+    weight: 2
+  })
+  .bindPopup(`
+    <b style="color:${meta.color}">${e.name}</b><br>
+    ${e.city}<br>
+    <i>${meta.it}</i><br>
+    <a href="${e.link}" target="_blank">Instagram</a>
+  `)
+  .bindTooltip(
+    `<span style="color:${meta.color}; font-weight:600">
+      ${e.name}
+    </span>`,
+    { permanent:true, direction:"right", offset:[8,0] }
+  );
+
+  m.day = e.day;
+  m.addTo(map);
+  markers.push(m);
+});
+
+/* =========================
+   CHECKBOXES (auto)
+========================= */
+const control = document.getElementById("dayControl");
+
+Object.entries(dayMeta).forEach(([day, meta]) => {
+  const label = document.createElement("label");
+  label.style.display = "block";
+  label.innerHTML = `
+    <input type="checkbox" checked data-day="${day}">
+    <span style="color:${meta.color}">●</span> ${meta.it}
+  `;
+  control.appendChild(label);
+});
+
+/* =========================
+   LEGEND (clickable)
+========================= */
+const legend = document.getElementById("legend");
+legend.innerHTML = "<b>Giorni della settimana</b><br>";
+
+Object.entries(dayMeta).forEach(([day, meta]) => {
+  const item = document.createElement("div");
+  item.style.cursor = "pointer";
+  item.dataset.day = day;
+  item.innerHTML = `
+    <span style="color:${meta.color}; font-size:16px">●</span> ${meta.it}
+  `;
+  item.onclick = () => toggleDay(day);
+  legend.appendChild(item);
+});
+
+/* =========================
+   TOGGLE LOGIC (shared)
+========================= */
+function toggleDay(day) {
+  const isActive = markers.some(m => m.day === day && map.hasLayer(m));
+
+  markers.forEach(m => {
+    if (m.day === day) {
+      isActive ? map.removeLayer(m) : map.addLayer(m);
+    }
+  });
+
+  document
+    .querySelectorAll(`input[data-day="${day}"]`)
+    .forEach(cb => cb.checked = !isActive);
+}
+
+document.addEventListener("change", e => {
+  if (!e.target.dataset.day) return;
+  const day = e.target.dataset.day;
+
+  markers.forEach(m => {
+    if (m.day === day) {
+      e.target.checked ? map.addLayer(m) : map.removeLayer(m);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
