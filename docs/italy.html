@@ -44,6 +44,10 @@
   opacity: 1;
   }
 
+  .leaflet-tooltip {
+   pointer-events: auto;
+  }
+
  .label {
     color: #000;
     opacity: 0.7;
@@ -170,11 +174,28 @@ events.forEach(e => {
     ${e.city} ogni <b style="color:${meta.color}">${meta.it}</b><br>
     <a href="${e.link}" target="_blank">Instagram</a>
   `)
-
+.bindTooltip(
+  `<span class="label" data-day="${e.day}">
+    ${e.name}
+  </span>`,
+  {
+    permanent: true,
+    direction: "right",
+    offset: [8, 0],
+    interactive: true
+  }
+);
 
   m.day = e.day;
   m.addTo(map);
   markers.push(m);
+});
+
+map.on("click", e => {
+  const el = e.originalEvent.target;
+  if (el.classList.contains("label")) {
+    toggleDay(el.dataset.day);
+  }
 });
 
 /* =========================
