@@ -35,7 +35,20 @@
     border-radius: 6px;
     box-shadow: 0 0 6px rgba(0,0,0,.2);
     font-size: 12px;
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
   }
+
+  .legend div:hover {
+  opacity: 1;
+  }
+
+ .label {
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+    }
 </style>
 </head>
 
@@ -153,17 +166,11 @@ events.forEach(e => {
     weight: 2
   })
   .bindPopup(`
-    <b style="color:${meta.color}">${e.name}</b><br>
-    ${e.city}<br>
-    <i>${meta.it}</i><br>
+    <b>${e.name}</b><br>
+    ${e.city} ogni <b style="color:${meta.color}">${meta.it}</b><br>
     <a href="${e.link}" target="_blank">Instagram</a>
   `)
-  .bindTooltip(
-    `<span style="color:${meta.color}; font-weight:600">
-      ${e.name}
-    </span>`,
-    { permanent:true, direction:"right", offset:[8,0] }
-  );
+
 
   m.day = e.day;
   m.addTo(map);
