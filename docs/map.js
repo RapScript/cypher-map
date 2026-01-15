@@ -26,7 +26,6 @@ class RapScriptMap {
         this.mainCategories = new Array();
         this.categories = new Object();
         this.currentCategory = 'all'
-        this.subCategoryControl = undefined
         this.map = undefined
         this.isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
         this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
@@ -173,100 +172,23 @@ class RapScriptMap {
         }
     }
 
-    applyFilter(filterCategory, filterSubCategories, zoomToSelection = false) {
+    applyFilter(filterCategory, zoomToSelection = false) {
 
         const geoLayer = L.geoJSON(this.geoJson, {
             onEachFeature: this.onEachMapFeature,
             pointToLayer: (point, coord) => this.renderMapMarker(point, coord),
             filter: function (feature, layer) {
                 const featureCategory = feature.properties.category
-                const featureSubCategories = feature.properties['sub-categories']
-
-                const shouldFilterSubCategory = Array.isArray(filterSubCategories)
-                const matchesCategory = (featureCategory == filterCategory || filterCategory == 'all')
-
-                let matchesSubCategory = (!shouldFilterSubCategory || featureSubCategories.length == 0)
-                if (shouldFilterSubCategory) {
-                    for (const subCategoryKey in featureSubCategories) {
-                        if (filterSubCategories.includes(featureSubCategories[subCategoryKey])) {
-                            matchesSubCategory = true
-                            break
-                        }
-                    }
-                }
-                return matchesCategory && matchesSubCategory
+                return (featureCategory == filterCategory || filterCategory == 'all')
             }
         })
 
         this.setMarkerLayer(geoLayer, this.map, zoomToSelection)
     }
 
-    forAllCheckboxElements(handler) {
-
-        if (typeof handler !== 'function') {
-            return
-        }
-        const checkboxElements = document.getElementsByClassName('sub-category-checkbox')
-        for (let i = 0; i < checkboxElements.length; i++) {
-            handler(checkboxElements[i])
-        }
-    }
-
     selectCategory(selectedCategory) {
-
-        const showAll = (selectedCategory == 'all')
-
-        if (this.subCategoryControl !== undefined) {
-            this.subCategoryControl.remove()
-        } else {
-            this.subCategoryControl = L.control({ position: 'topright' });
-        }
-
-        if (!showAll) {
-            this.subCategoryControl.onAdd = (map) => {
-                const div = L.DomUtil.create('div', 'sub-categories')
-
-                let checkboxCount = 0
-                let checkboxes = ''
-                for (const subCategoryKey in this.categories[selectedCategory]) {
-                    const subCategory = this.categories[selectedCategory][subCategoryKey]
-                    checkboxCount += 1
-                    checkboxes += '<div>'
-                    checkboxes += '<input type="checkbox" id="sub-category-' + checkboxCount + '" name="' + subCategory + '" class="sub-category-checkbox" checked></input>'
-                    checkboxes += '<label for="sub-category-' + checkboxCount + '">' + subCategory + '</label>'
-                    checkboxes += '</div>'
-                }
-                let toggleAllButton = '<button onclick="map.toggleSubCategories()">alle</button>'
-
-                div.innerHTML = checkboxes + toggleAllButton
-                return div
-            };
-            this.subCategoryControl.addTo(this.map)
-
-            this.forAllCheckboxElements(
-                (checkbox) => checkbox.addEventListener('change', (event) => this.updateSubCategorySelection(), false)
-            )
-        }
-
-        this.applyFilter(selectedCategory, undefined, true)
+        this.applyFilter(selectedCategory, true)
         this.currentCategory = selectedCategory
-    }
-
-    toggleSubCategories() {
-
-        let selectAll = false
-        this.forAllCheckboxElements((checkbox) => { if (!checkbox.checked) { selectAll = true } })
-        this.forAllCheckboxElements((checkbox) => { checkbox.checked = selectAll })
-        this.applyFilter(this.currentCategory, (selectAll ? undefined : []), selectAll)
-    }
-
-    updateSubCategorySelection() {
-
-        let selectedSubCategories = []
-        this.forAllCheckboxElements(
-            (checkbox) => { if (checkbox.checked) { selectedSubCategories.push(checkbox.name) } }
-        )
-        this.applyFilter(this.currentCategory, selectedSubCategories, true)
     }
 
     applyGeoData(data) {
@@ -276,19 +198,11 @@ class RapScriptMap {
 
         // Collect categories.
         for (const feature in features) {
-
             const properties = features[feature]['properties']
             const category = properties['category']
 
             if (!this.categories.hasOwnProperty(category)) {
-                this.categories[category] = new Array()
-            }
-
-            for (const subCategoryKey in properties['sub-categories']) {
-                const subCategory = properties['sub-categories'][subCategoryKey]
-                if (!this.categories[category].includes(subCategory)) {
-                    this.categories[category].push(subCategory)
-                }
+                this.categories[category] = true
             }
         }
         this.mainCategories = Object.keys(this.categories).sort()
