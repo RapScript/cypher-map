@@ -36,6 +36,7 @@ class RapScriptMap {
         this.showCategorySelection = options.showCategorySelection
         this.onDataReady = options.onDataReady
         this.useCustomMarkers = (options.useCustomMarkers === true)
+        // GeoJSON data parsed from .geojson file.
         this.geoJson = undefined
 
         // Add loading layer DOM.
@@ -44,7 +45,7 @@ class RapScriptMap {
         mapContainer.innerHTML = '<div id="loading"><svg height="100" width="100" class="spinner"><circle cx="50" cy="50" r="20" class="inner-circle" /></svg></div>'
 
         const resourceVersionTag = '20200619'
-        const dataUrl = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/germany.geojson?v=' + resourceVersionTag
+        const dataUrl = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/italy.geojson?v=' + resourceVersionTag
         const cssUrl = (this.isLocal ? '' : this.repositoryBaseUrl + 'docs/') + 'map-style.css?v=' + resourceVersionTag
 
         RapScriptHelper.loadCss(cssUrl)
@@ -201,14 +202,14 @@ class RapScriptMap {
             const properties = features[feature]['properties']
             const category = properties['category']
 
-            if (!this.categories.hasOwnProperty(category)) {
+            if (category !== undefined && !this.categories.hasOwnProperty(category)) {
                 this.categories[category] = true
             }
         }
         this.mainCategories = Object.keys(this.categories).sort()
         console.log(this.categories);
 
-        if (this.showCategorySelection !== false) {
+        if (this.showCategorySelection !== false && this.mainCategories.length > 0) {
             // Create category selection control.
             const control = L.control({ position: 'topright' });
             control.onAdd = (map) => {
@@ -231,7 +232,7 @@ class RapScriptMap {
                 .addEventListener('change', (event) => this.selectCategory(event.target.value), false);
         }
 
-        this.applyFilter('all');
+        this.applyFilter('all', true);
 
         // Remove loading overlay.
         document.getElementById('loading').remove()

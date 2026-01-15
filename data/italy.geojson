@@ -5,8 +5,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Trento",
-                "url": "https://www.instagram.com/scaladitrento/",
-                "address": "Tunnel Arti Libere Piazza Venezia (TN)",
+                "name": "Scala di Trento",
+                "url": "https://www.instagram.com/scaladitrento",
+                "address": "Tunnel Arti Libere Piazza Venezia Trento TN",
                 "weekdays": [
                     "thu"
                 ]
@@ -23,8 +24,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Fiume Veneto",
+                "name": "Tocai Cypher",
                 "url": "https://www.instagram.com/tocai.cypher",
-                "address": "Via Praderoni, 24, 33080 Fiume Veneto PN, Italien",
+                "address": "Via Praderoni, 24, 33080 Fiume Veneto PN",
                 "weekdays": [
                     "fri"
                 ]
@@ -43,7 +45,7 @@
                 "city": "Treviso",
                 "name": "Le Mura Freestyle Treviso",
                 "url": "https://www.instagram.com/le.mura.freestyle_treviso",
-                "address": "Viale Bartolomeo D'Alviano, 5-1, 31100 Treviso TV, Italien",
+                "address": "Viale Bartolomeo D'Alviano, 5-1, 31100 Treviso TV",
                 "weekdays": [
                     "thu"
                 ]
@@ -59,24 +61,10 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Trieste",
-                "weekdays": []
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    13.7768,
-                    45.6495
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "city": "Paderno Dugano",
                 "name": "Rappaderno",
                 "url": "https://www.instagram.com/rappaderno.037",
-                "address": " Piazza Del Mercato, Paderno Dugnano, 20037 (MI)",
+                "address": "Piazza Del Mercato, 20037  Paderno Dugnano MI",
                 "weekdays": [
                     "fri"
                 ]
@@ -93,7 +81,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Vicenza",
-                "url": "https://www.instagram.com/rimerievicentine/",
+                "name": "Rimerie Vicentine",
+                "url": "https://www.instagram.com/rimerievicentine",
+                "address": "Str. Marosticana, 24, 36100 Vicenza VI",
                 "weekdays": [
                     "wed"
                 ]
@@ -110,7 +100,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Brescia",
-                "url": "https://www.instagram.com/muretto_dibrescia/",
+                "name": "Muretto diBrescia",
+                "url": "https://www.instagram.com/muretto_dibrescia",
+                "address": "Via Filippo Turati, 25121 Brescia BS",
                 "weekdays": [
                     "thu"
                 ]
@@ -128,7 +120,8 @@
             "properties": {
                 "city": "Milano",
                 "name": "Muretto Milano",
-                "url": "https://www.instagram.com/muretto.milano?igsh=MW91YTRia3A3OWttNQ==",
+                "url": "https://www.instagram.com/muretto.milano",
+                "address": "Largo Corsia dei Servi, 20122 Milano",
                 "weekdays": [
                     "wed"
                 ]
@@ -145,9 +138,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Vigonza",
-                "name": "Muretto di Vigonza",
-                "url": "https://www.instagram.com/boschetto.mk/",
-                "address": "Via San Marco 255, PD",
+                "name": "Boschetto",
+                "url": "https://www.instagram.com/boschetto.mk",
+                "address": "Via S. Marco, 255, 35129 Padova PD",
                 "weekdays": [
                     "fri"
                 ]
@@ -165,8 +158,8 @@
             "properties": {
                 "city": "Venezia",
                 "name": "Piramidi Freestyle Cypher",
-                "url": "https://www.instagram.com/piramidifreestylecypher/",
-                "address": "Mestre, Parco Bissuola",
+                "url": "https://www.instagram.com/piramidifreestylecypher",
+                "address": "Via Antonio da Mestre, 12, 30171 Venezia VE",
                 "weekdays": [
                     "mo"
                 ]
@@ -184,8 +177,8 @@
             "properties": {
                 "city": "Verona",
                 "name": "IL MATTONE DI VERONA",
-                "url": "https://www.instagram.com/mattone_vr?igsh=N3o0YmU3dWV6bG0w",
-                "address": " DOVE: @anteprima_bar",
+                "url": "https://www.instagram.com/mattone_vr",
+                "address": "Via Campofiore, 1, 37129 Verona VR",
                 "weekdays": [
                     "thu"
                 ]
@@ -202,8 +195,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Padova",
-                "url": "https://www.instagram.com/fungo.micelio?igsh=a2wyMjYwNWJxa3hx",
-                "address": "Distretto EST, Via Giacinto Andrea Longhin, 123, 35129 Padova PD, Italia",
+                "name": "Fungo Micelio",
+                "url": "https://www.instagram.com/fungo.micelio",
+                "address": "Distretto EST, Via Giacinto Andrea Longhin, 123, 35129 Padova PD",
                 "weekdays": [
                     "tue"
                 ]
@@ -222,6 +216,7 @@
                 "city": "Chioggia",
                 "name": "Freesta Rosa Cypher",
                 "url": "https://www.instagram.com/freestarosacypher",
+                "address": "Via Padre Emilio Venturini, 15, 30015 Chioggia VE",
                 "weekdays": [
                     "tue",
                     "fri"
@@ -240,7 +235,7 @@
             "properties": {
                 "city": "Pavia",
                 "name": "PVCypha",
-                "url": "https://www.instagram.com/tretorripvc/",
+                "url": "https://www.instagram.com/tretorripvc",
                 "address": "Piazza Leonardo Da Vinci, 16, 27100 Pavia PV",
                 "weekdays": [
                     "fri"
@@ -258,7 +253,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Cremona",
-                "url": "https://www.instagram.com/iltorrazzocr/",
+                "name": "Il Torrazzo di Cremona",
+                "url": "https://www.instagram.com/iltorrazzocr",
+                "address": "Via Giovanni Baldesio, 26100 Cremona CR",
                 "weekdays": [
                     "thu"
                 ]
@@ -275,8 +272,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Turino",
-                "url": "https://www.instagram.com/regio_freestyle_torino/",
-                "address": "Piazza Castello - lato est del castello",
+                "name": "Regio Freestyle Torino",
+                "url": "https://www.instagram.com/regio_freestyle_torino",
+                "address": "Piazza Castello, 10100 Torino TO",
                 "weekdays": [
                     "wed"
                 ]
@@ -286,20 +284,6 @@
                 "coordinates": [
                     7.6869,
                     45.0703
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "city": "Piacenza",
-                "weekdays": []
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    9.7000,
-                    45.0500
                 ]
             }
         },
@@ -327,8 +311,8 @@
             "properties": {
                 "city": "Parma",
                 "name": "Il Cerchio",
-                "url": "https://www.instagram.com/ilcerchio.pr/",
-                "address": "ArtLab Oltretorrente, Borgo Tanzi 26",
+                "url": "https://www.instagram.com/ilcerchio.pr",
+                "address": "Borgo Rodolfo Tanzi, 26, 43125 Parma PR",
                 "weekdays": [
                     "thu"
                 ]
@@ -346,7 +330,8 @@
             "properties": {
                 "city": "Reggio Emilia",
                 "name": "Mureggio Free",
-                "url": "https://www.instagram.com/mureggio_free/",
+                "url": "https://www.instagram.com/mureggio_free",
+                "address": "Piazzale Europa, 1950, 42124 Reggio nell'Emilia RE",
                 "weekdays": [
                     "wed"
                 ]
@@ -362,22 +347,10 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Modena",
-                "weekdays": []
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    10.9252,
-                    44.6471
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "city": "Bologna",
-                "url": "https://www.instagram.com/sanfra.bo/",
+                "name": "SANFRA Bolo",
+                "url": "https://www.instagram.com/sanfra.bo",
+                "address": "Piazza S. Francesco, 8/7, 40123 Bologna BO",
                 "weekdays": [
                     "tue"
                 ]
@@ -394,7 +367,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Lugo",
-                "url": "https://www.instagram.com/loggialugofreestyle?igsh=N2FndWVtMG42bnJ6",
+                "name": "LA LOGGIA",
+                "url": "https://www.instagram.com/loggialugofreestyle",
+                "address": "Corso Mazzini, 77, 48022 Lugo RA",
                 "weekdays": [
                     "thu"
                 ]
@@ -410,8 +385,13 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Genua?",
-                "weekdays": []
+                "city": "Genova",
+                "name": "Muretto di Genova",
+                "url": "https://www.instagram.com/leaguria/",
+                "address": "Piazza della Vittoria, 1, 16121 Genova GE",
+                "weekdays": [
+                    "wed"
+                ]
             },
             "geometry": {
                 "type": "Point",
@@ -427,7 +407,7 @@
                 "city": "Carrara",
                 "name": "Fortitudo Mea in Rap",
                 "url": "https://www.instagram.com/fortitudo_rap",
-                "address": "parcheggio 𝗧𝘂𝗿𝗶𝗴𝗹𝗶𝗮𝗻𝗼 ",
+                "address": "Piazza Antonio Gramsci, 1, 54033 Carrara MS, Italien",
                 "weekdays": [
                     "wed"
                 ]
@@ -446,6 +426,7 @@
                 "city": "Santarcangelo",
                 "name": "Muretto Santarcangelo",
                 "url": "https://www.instagram.com/murettosantarcangelo",
+                "address": "Parco Francolini, 47822 Santarcangelo di Romagna RN",
                 "weekdays": [
                     "wed"
                 ]
@@ -463,8 +444,8 @@
             "properties": {
                 "city": "Imperia",
                 "name": "Muretto di Imperia",
-                "url": "?",
-                "address": "Via Arziglia",
+                "url": "https://www.instagram.com/ligunionevents/",
+                "address": "Via Arziglia, 18012 Bordighera IM",
                 "weekdays": [
                     "mo"
                 ]
@@ -481,7 +462,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Prato",
-                "url": "https://www.instagram.com/muraglia.prato/",
+                "name": "Muraglia Prato",
+                "url": "https://www.instagram.com/muraglia.prato",
+                "address": "Piazza Mercatale, 59100 Prato PO",
                 "weekdays": [
                     "fri"
                 ]
@@ -498,9 +481,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Firenze",
-                "name": "GIGLIO aka MURETTO DI FIRENZE",
-                "url": "https://www.instagram.com/giglio_fi/",
-                "address": "Piazza Santissima Annunziata (FI)",
+                "name": "Giglio",
+                "url": "https://www.instagram.com/giglio_fi",
+                "address": "Piazza Santissima Annunziata, Firenze FI",
                 "weekdays": [
                     "thu"
                 ]
@@ -538,7 +521,7 @@
                 "city": "Empoli",
                 "name": "Stadivm Technique",
                 "url": "https://www.instagram.com/stadivm_technique",
-                "address": "via delle olimpiadi, Empoli",
+                "address": "Via delle Olimpiadi, 60, 50053 Empoli FI",
                 "weekdays": [
                     "so"
                 ]
@@ -556,7 +539,8 @@
             "properties": {
                 "city": "Ancona",
                 "name": "Plaza ",
-                "url": "https://www.instagram.com/tredueunoplaza?igsh=MTNmY29wbzZzMjllaw==",
+                "url": "https://www.instagram.com/tredueunoplaza",
+                "address": "Piazza Sandro Pertini, 60122 Ancona AN",
                 "weekdays": [
                     "thu"
                 ]
@@ -572,22 +556,10 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Macerata (MC)",
-                "weekdays": []
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    13.4530,
-                    43.2991
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "city": "Perugia",
-                "url": "https://www.instagram.com/muretto.pg?igsh=dm43bHM3YmhwODJn",
+                "name": "Muretto Perugia",
+                "url": "https://www.instagram.com/muretto.pg",
+                "address": "Piazza IV Novembre, 06100 Perugia PG",
                 "weekdays": [
                     "fri"
                 ]
@@ -604,8 +576,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Teramo ",
-                "url": "https://www.instagram.com/teramocypher?igsh=MWU1MmVjY3FzMWt5cQ==",
-                "address": "Via Mazzini, 10 Teramo (TE)",
+                "name": "Teramo Cypher",
+                "url": "https://www.instagram.com/teramocypher",
+                "address": "Via Mazzini, 10 Teramo TE",
                 "weekdays": [
                     "fri"
                 ]
@@ -623,7 +596,8 @@
             "properties": {
                 "city": "Pescara ",
                 "name": "FRP Freestyle Reunion Pescara",
-                "url": "https://www.instagram.com/freestylereunionpescara/",
+                "url": "https://www.instagram.com/freestylereunionpescara",
+                "address": "Corso Gabriele Manthone, 65127 Pescara PE",
                 "weekdays": [
                     "fri"
                 ]
@@ -641,8 +615,8 @@
             "properties": {
                 "city": "Viterbo",
                 "name": "Barre Faul",
-                "url": "https://www.instagram.com/barre_faul?igsh=MWFiY2p5ZTR6aWhxdQ==",
-                "address": "Valle Faul",
+                "url": "https://www.instagram.com/barre_faul",
+                "address": "Via Faul, 6, 01100 Viterbo VT",
                 "weekdays": [
                     "wed"
                 ]
@@ -659,8 +633,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Guidonia (Roma)",
-                "url": "https://www.instagram.com/alcyoneflowfreestyle?igsh=MTl3Yzk0NDJ1cG10MQ==",
-                "address": "https://maps.app.goo.gl/YzSm9YjqWhXWYFxy9",
+                "name": "Alcyone Flow Freestyle",
+                "url": "https://www.instagram.com/alcyoneflowfreestyle",
+                "address": "Playground Alcyone, 00012 Guidonia Montecelio RM",
                 "weekdays": [
                     "tue"
                 ]
@@ -677,7 +652,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Roma",
-                "url": "https://www.instagram.com/ateneorm?igsh=bmV0NWlqeDdqcnRu",
+                "name": "ATENEO",
+                "url": "https://www.instagram.com/ateneorm",
+                "address": "Via Adria, 23, 00182 Roma RM",
                 "weekdays": [
                     "thu"
                 ]
@@ -696,7 +673,7 @@
                 "city": "Barletta",
                 "name": "Colossus Cypher",
                 "url": "https://www.instagram.com/colossus.cypher",
-                "address": "https://maps.app.goo.gl/7Yi6GyZGDHnQ6gYZA",
+                "address": "Via Leonardo da Vinci, 15, 76121 Barletta BT",
                 "weekdays": [
                     "tue"
                 ]
@@ -713,7 +690,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Bari",
-                "url": "https://www.instagram.com/rossani.bari?igsh=dnhnazhnZ25zMzNz",
+                "name": "Rossani Cypher",
+                "url": "https://www.instagram.com/rossani.bari",
+                "address": "Via De Bellis Vitantonio, 47, 70126 Bari BA",
                 "weekdays": [
                     "wed"
                 ]
@@ -731,8 +710,8 @@
             "properties": {
                 "city": "Bitonto",
                 "name": "Beatonto Cypher",
-                "url": "https://www.instagram.com/beatonto_cypher/?hl=en",
-                "address": "Piazza Marconi",
+                "url": "https://www.instagram.com/beatonto_cypher",
+                "address": "Piazza Marconi 70032 Bitonto BA",
                 "weekdays": [
                     "tue"
                 ]
@@ -748,14 +727,94 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Napoli?",
-                "weekdays": []
+                "city": "Atripalda",
+                "name": "Fattaccio",
+                "url": "https://www.instagram.com/il.fattaccio_av/",
+                "address": "Via Marino Caracciolo, 100, 83042 Atripalda AV",
+                "weekdays": [
+                    "wed"
+                ]
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    14.2681,
-                    40.8518
+                    14.8300,
+                    40.9200
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "city": "Pomigliano D'Arco",
+                "name": "Gradoni",
+                "url": "https://www.instagram.com/igradoni.na/",
+                "address": "Via Gandhi, 8, 80038 Pomigliano d'Arco NA",
+                "weekdays": [
+                    "tue"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3900,
+                    40.9100
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "city": "Avellino",
+                "name": "Il Macello",
+                "url": "https://www.instagram.com/ilmacello.av/",
+                "weekdays": [
+                    "wed"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7900,
+                    40.9100
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "city": "Napoli",
+                "name": "A’ Mostr",
+                "url": "https://www.instagram.com/a_mostr.10/",
+                "address": "Via Nisida, 24, 80124 Napoli NA",
+                "weekdays": [
+                    "wed"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1900,
+                    40.8300
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "city": "Salerno",
+                "name": "Scalette Salerno",
+                "url": "https://www.instagram.com/scalettessea/",
+                "address": "Piazza della Libertà, 84121 Salerno SA",
+                "weekdays": [
+                    "thu"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7600,
+                    40.6000
                 ]
             }
         },
@@ -764,8 +823,8 @@
             "properties": {
                 "city": "Brindisino",
                 "name": "Br Cypher",
-                "url": "https://www.instagram.com/brcypher/",
-                "address": "Scale del Torrione | Via Del Mare",
+                "url": "https://www.instagram.com/brcypher",
+                "address": "Via del Mare, 54, 72100 Brindisi BR",
                 "weekdays": [
                     "tue"
                 ]
@@ -784,7 +843,7 @@
                 "city": "Massafra",
                 "name": "Massypher",
                 "url": "https://www.instagram.com/massypher",
-                "address": "Vico II Santi Medici, 74016 Massafra TA, Italien",
+                "address": "Vico II Santi Medici, 74016 Massafra TA",
                 "weekdays": [
                     "tue"
                 ]
@@ -800,10 +859,10 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Tarento",
+                "city": "Taranto",
                 "name": "2MARI Cypher",
-                "url": "https://www.instagram.com/2maricypher?igsh=MW5pN20ybjRiNTFm",
-                "address": "PIAZZA FADINI",
+                "url": "https://www.instagram.com/2maricypher",
+                "address": "Via Principe Amedeo, 239, 74121 Taranto TA",
                 "weekdays": [
                     "thu"
                 ]
@@ -819,10 +878,10 @@
         {
             "type": "Feature",
             "properties": {
-                "city": "Tarent",
+                "city": "Taranto",
                 "name": "Tamburi Cypher",
                 "url": "https://www.instagram.com/tamburicypher",
-                "address": "https://maps.app.goo.gl/NQkjSDxUwFy91S9J7",
+                "address": "Via Grazia Deledda, 69, 74123 Taranto TA",
                 "weekdays": [
                     "so"
                 ]
@@ -839,7 +898,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Lecce",
-                "url": "https://www.instagram.com/lecce.cypher?igsh=ZXFsNzRvMmc4dXdo",
+                "name": "Le Cypher",
+                "url": "https://www.instagram.com/lecce.cypher",
+                "address": "Piazzetta di Giosuè Carducci, 73100 Lecce LE",
                 "weekdays": [
                     "thu"
                 ]
@@ -856,7 +917,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Salento",
+                "name": "Nardò Cypher",
                 "url": "https://www.instagram.com/nardo.cypher",
+                "address": "Piazza Umberto I 73048 Nardò LE",
                 "weekdays": []
             },
             "geometry": {
@@ -872,8 +935,8 @@
             "properties": {
                 "city": "Porto Cesareo",
                 "name": "Cisaypher",
-                "url": "https://www.instagram.com/cisaypher/",
-                "address": "Zona: https://www.instagram.com/molo_16/",
+                "url": "https://www.instagram.com/cisaypher",
+                "address": "Lungomare Raffaele Sambati, 73010 Porto Cesareo LE",
                 "weekdays": [
                     "mo"
                 ]
@@ -890,7 +953,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Rende",
-                "url": "https://www.instagram.com/cosenzacampuscypher?igsh=aDMwejZmemxibjAz",
+                "name": "Cosenza Campus Cypher",
+                "url": "https://www.instagram.com/cosenzacampuscypher",
+                "address": "Via Alberto Savinio, 54B, 87036 Quattromiglia CS",
                 "weekdays": [
                     "thu"
                 ]
@@ -908,7 +973,8 @@
             "properties": {
                 "city": "Cosenza",
                 "name": "Versum Cosenza",
-                "url": "https://www.instagram.com/versumcosenza/",
+                "url": "https://www.instagram.com/versumcosenza",
+                "address": "Giardino Luigi De Matera, 87100 Cosenza CS",
                 "weekdays": [
                     "tue",
                     "fri"
@@ -927,8 +993,8 @@
             "properties": {
                 "city": "Cagliari",
                 "name": "Bastione Freestyle Cagliari",
-                "url": "https://www.instagram.com/bastione_freestyle_cagliari/",
-                "address": "Al Bastione di S.Remy, Cagliari",
+                "url": "https://www.instagram.com/bastione_freestyle_cagliari",
+                "address": "Piazza Costituzione, 09121 Cagliari CA",
                 "weekdays": [
                     "so"
                 ]
@@ -945,7 +1011,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Milazzo",
-                "url": "https://www.instagram.com/bonsai_cypher?igsh=NThlaTQwdTloN3Vx",
+                "name": "Bonsai Cypher",
+                "url": "https://www.instagram.com/bonsai_cypher",
+                "address": "Piazza Peppino Impastato, 98057 Milazzo ME",
                 "weekdays": [
                     "fri"
                 ]
@@ -962,7 +1030,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Messina",
-                "url": "https://www.instagram.com/strettocypher?igsh=MW5sejR3ZTNzZ3N4NQ==",
+                "name": "Stretto Cypher",
+                "url": "https://www.instagram.com/strettocypher",
+                "address": "Strada S. Giacomo, 6, 98122 Messina ME",
                 "weekdays": [
                     "wed"
                 ]
@@ -981,7 +1051,7 @@
                 "city": "Palermo",
                 "name": "Muster Palermo",
                 "url": "https://www.instagram.com/musterpalermo",
-                "address": "Via Roma, 320, Palermo",
+                "address": "Via Roma, 320, 90133 Palermo PA",
                 "weekdays": [
                     "tue"
                 ]
@@ -998,7 +1068,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Catania",
-                "url": "https://www.instagram.com/panchine_exp?igsh=OXVpbHQ2eG8ydjRx",
+                "name": "Panchine Experience",
+                "url": "https://www.instagram.com/panchine_exp",
+                "address": "Via Cardinale Dusmet 2, 95131 Catania CA",
                 "weekdays": [
                     "tue"
                 ]
@@ -1015,8 +1087,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Canicattì",
-                "name": "Trinchera??",
-                "url": "https://www.instagram.com/trinchera.muretto/",
+                "name": "Trinchera",
+                "url": "https://www.instagram.com/trinchera.muretto",
+                "address": "Via Ugo Foscolo, 3, 92024 Canicattì AG",
                 "weekdays": [
                     "thu"
                 ]
@@ -1033,7 +1106,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Agrigento",
-                "url": "https://www.instagram.com/underdogs_ag?igsh=MTl1MmNuNzYyZnJhbQ==",
+                "name": "Underdogs",
+                "url": "https://www.instagram.com/underdogs_ag",
+                "address": "Villa Bonfiglio, 92100 Agrigento AG",
                 "weekdays": [
                     "wed"
                 ]
@@ -1050,7 +1125,9 @@
             "type": "Feature",
             "properties": {
                 "city": "Siracusa",
-                "url": "https://www.instagram.com/muretto.siracusa?igsh=MXFiN3FoMm91azJueg==",
+                "name": "Muretto Siracusa",
+                "url": "https://www.instagram.com/muretto.siracusa",
+                "address": "Piazza Francesco Crispi, 96100 Siracusa SR",
                 "weekdays": [
                     "thu",
                     "fri"
@@ -1069,7 +1146,8 @@
             "properties": {
                 "city": "Ragusa",
                 "name": "Il Muretto di Ragusa",
-                "url": "https://www.instagram.com/muretto.ragusa/",
+                "url": "https://www.instagram.com/muretto.ragusa",
+                "address": "Parco Giovanni Paolo II, 97100 Ragusa RG",
                 "weekdays": [
                     "tue"
                 ]
