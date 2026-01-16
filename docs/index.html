@@ -10,10 +10,8 @@
 
     <meta property="og:title" content="Freestyle Cypher Map - by RapScript" />
     <meta property="og:locale" content="en_US" />
-    <meta name="description"
-        content="An interactive map of freestyle rap cyphers in Europe." />
-    <meta property="og:description"
-        content="An interactive map of freestyle rap cyphers in Europe." />
+    <meta name="description" content="An interactive map of freestyle rap cyphers in Europe." />
+    <meta property="og:description" content="An interactive map of freestyle rap cyphers in Europe." />
     <link rel="canonical" href="https://rapscript.github.io/cypher-map/" />
     <meta property="og:url" content="https://rapscript.github.io/cypher-map/" />
     <!--<meta property="og:image"
@@ -32,14 +30,13 @@
             margin-top: 2em;
         }
     </style>
-
 </head>
 
 <body>
     <div id="mapid" style="height: 100%"></div>
-    <script src="map.js"></script>
+    <script src="map.js?v=4"></script>
     <script>
-        var map = new RapScriptMap('mapid', {
+        var map = new FreestyleRapCypherMap('mapid', {
             mapBoxKey: 'pk.eyJ1Ijoicm9tYW5naWxsZSIsImEiOiJjazhmZXNleTcwMDdjM2hwMWw2a3Z6MGYxIn0.pnoK-wT1_i47xTYNvtlRbg',
             mapBoxStyle: 'romangille/ck8ffr84j1z8p1inv9r486iyo',
             // clusterBelowZoom: 15,
