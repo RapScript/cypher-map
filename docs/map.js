@@ -26,7 +26,7 @@ class FreestyleRapCypherMap {
         this.mapManager = undefined
         this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
 
-        const resourceVersionTag = '202006120'
+        const resourceVersionTag = '202006121'
         const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
         const dataUrl = dataFolder + 'italy.geojson?v=' + resourceVersionTag
         const cssUrl = (this.isLocal ? '' : this.repositoryBaseUrl + 'docs/') + 'map-style.css?v=' + resourceVersionTag
@@ -35,9 +35,11 @@ class FreestyleRapCypherMap {
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
         CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', () => {
-            CypherMapDOMHelper.loadScript('includes/MapManager.js', () => {
+            CypherMapDOMHelper.loadScript('includes/MapManager.js?v=' + resourceVersionTag, () => {
                 this.mapManager = new MapManager( mapElementId, options, dataFolder )
-                CypherMapDOMHelper.loadUrl( dataUrl, (data) => this.mapManager.applyGeoData(data) );
+                CypherMapDOMHelper.loadScript('includes/LocationInfo.js?v=' + resourceVersionTag, () => {
+                    CypherMapDOMHelper.loadUrl( dataUrl, (data) => this.mapManager.applyGeoData(data) );
+                })
             })
         })
         // Add cluster css when clustering is enabled.

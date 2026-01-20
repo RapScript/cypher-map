@@ -31,8 +31,7 @@ class MapManager {
         this.useCustomMarkers = (options.useCustomMarkers === true)
 
         // Initialize members.
-        this.mainCategories = new Array();
-        this.categories = new Object();
+        this.categories = new Array();
         this.currentCategory = 'all'
         this.map = undefined
         this.isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
@@ -165,8 +164,7 @@ class MapManager {
             onEachFeature: this.onEachMapFeature,
             pointToLayer: (point, coord) => this.renderMapMarker(point, coord),
             filter: function (feature, layer) {
-                const featureCategory = feature.properties.category
-                return (featureCategory == filterCategory || filterCategory == 'all')
+                return (feature.info.categories.includes(filterCategory) || filterCategory == 'all')
             }
         })
 
@@ -184,18 +182,20 @@ class MapManager {
         const features = this.geoJson['features'];
 
         // Collect categories.
-        for (const feature in features) {
-            const properties = features[feature]['properties']
-            const category = properties['category']
+        for (const featIndex in features) {
+            const info = new LocationInfo(features[featIndex]['properties'])
+            features[featIndex]['info'] = info
 
-            if (category !== undefined && !this.categories.hasOwnProperty(category)) {
-                this.categories[category] = true
+            for (const catIndex in info.categories) {
+                const category = info.categories[catIndex]
+                if (!this.categories.includes(category)) {
+                    this.categories.push(category)
+                }
             }
         }
-        this.mainCategories = Object.keys(this.categories).sort()
         console.log(this.categories);
 
-        if (this.showCategorySelection !== false && this.mainCategories.length > 0) {
+        if (this.showCategorySelection !== false && this.categories.length > 0) {
             // Create category selection control.
             const control = L.control({ position: 'topright' });
             control.onAdd = (map) => {
@@ -203,8 +203,8 @@ class MapManager {
 
                 let categorySelection = '<form><div class="select-wrapper fa fa-angle-down"><select id="category-selection" name="category">'
                 categorySelection += '<option value="all">Alle</option>'
-                for (const catId in this.mainCategories) {
-                    let category = this.mainCategories[catId]
+                for (const catId in this.categories) {
+                    let category = this.categories[catId]
                     categorySelection += '<option value="' + category + '">' + category + '</option>'
                 }
                 categorySelection += '</select></div></form>'
@@ -225,7 +225,7 @@ class MapManager {
 
         // Call handler.
         if (this.onDataReady !== undefined && typeof (this.onDataReady) == 'function') {
-            this.onDataReady(this.mainCategories)
+            this.onDataReady(this.categories)
         }
     }
 }
