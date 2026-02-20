@@ -34,14 +34,7 @@ class FreestyleRapCypherMap {
         CypherMapDOMHelper.loadCss(cssUrl)
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
-        CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', () => {
-            CypherMapDOMHelper.loadScript('includes/MapManager.js?v=' + resourceVersionTag, () => {
-                this.mapManager = new MapManager( mapElementId, options, dataFolder )
-                CypherMapDOMHelper.loadScript('includes/LocationInfo.js?v=' + resourceVersionTag, () => {
-                    CypherMapDOMHelper.loadUrl( dataUrl, (data) => this.mapManager.applyGeoData(data) );
-                })
-            })
-        })
+        this._init(mapElementId, options, dataFolder, dataUrl, resourceVersionTag)
         // Add cluster css when clustering is enabled.
         if (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number') {
             CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css')
@@ -51,18 +44,28 @@ class FreestyleRapCypherMap {
             CypherMapDOMHelper.loadCss('https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.71.1/dist/L.Control.Locate.min.css')
         }
     }
+
+    async _init(mapElementId, options, dataFolder, dataUrl, resourceVersionTag) {
+        await CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js')
+        await CypherMapDOMHelper.loadScript('includes/MapManager.js?v=' + resourceVersionTag)
+        this.mapManager = new MapManager(mapElementId, options, dataFolder)
+        await CypherMapDOMHelper.loadScript('includes/LocationInfo.js?v=' + resourceVersionTag)
+        const response = await fetch(dataUrl)
+        this.mapManager.applyGeoData(await response.text())
+    }
 }
 
 class CypherMapDOMHelper {
 
-    static loadScript(url, callback = () => { }) {
-        const scriptNode = document.createElement("script");
-        scriptNode.type = 'text/javascript';
-        scriptNode.src = url;
-        scriptNode.onreadystatechange = callback
-        scriptNode.onload = callback
-
-        document.head.appendChild(scriptNode);
+    static loadScript(url) {
+        return new Promise((resolve, reject) => {
+            const scriptNode = document.createElement('script')
+            scriptNode.type = 'text/javascript'
+            scriptNode.src = url
+            scriptNode.onload = resolve
+            scriptNode.onerror = reject
+            document.head.appendChild(scriptNode)
+        })
     }
 
     static loadCss(url) {
@@ -71,18 +74,6 @@ class CypherMapDOMHelper {
         cssNode.href = url
 
         document.head.appendChild(cssNode);
-    }
-
-    static loadUrl(url, handler) {
-        const request = new XMLHttpRequest();
-        request.open("GET", url);
-        request.send();
-
-        request.onreadystatechange = (e) => {
-            if (request.readyState == 4 && request.status == 200) {
-                handler(request.responseText)
-            }
-        }
     }
 
     static navigate(lat, lon, address) {
