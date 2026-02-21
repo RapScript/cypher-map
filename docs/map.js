@@ -26,7 +26,7 @@ class FreestyleRapCypherMap {
         this.mapManager = undefined
         this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
 
-        const resourceVersionTag = '2026-02-21_0'
+        const resourceVersionTag = '2026-02-21_1' //+ Math.floor(Math.random() * 100 + 1)
         const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
         const dataUrl = dataFolder + 'italy.geojson?v=' + resourceVersionTag
         const cssUrl = (this.isLocal ? '' : this.repositoryBaseUrl + 'docs/') + 'map-style.css?v=' + resourceVersionTag

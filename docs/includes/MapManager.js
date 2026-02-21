@@ -148,20 +148,21 @@ class MapManager {
 
         if (p.url) html += '<p class="link">' + this.formatSocialLink(p.url) + '</p>';
 
-        layer.bindPopup(html);
+        layer.bindPopup(html, { offset: [0, -30] });
     }
 
     renderMapMarker(geoJsonPoint, coordinatate) {
-        const markerFilename = (this.useCustomMarkers ? geoJsonPoint.properties.image : 'marker_default.svg')
+        const markerFilename = (this.useCustomMarkers ? geoJsonPoint.properties.image : 'marker_mic.svg')
         const icon = L.icon({
             iconUrl: this.dataFolder + 'images/' + markerFilename,
             iconSize: [38, 38],
+            iconAnchor: [19, 38],
             shadowUrl: this.dataFolder + 'images/shadow.svg',
             shadowSize: (this.useCustomMarkers ? [50, 50] : [7, 7]),
-            shadowAnchor: (this.useCustomMarkers ? [25, 22] : [3.5, -15])
+            shadowAnchor: (this.useCustomMarkers ? [25, 22] : [3.5, 5])
         });
         return L.marker(coordinatate, { icon: icon })
-            .bindTooltip(geoJsonPoint.properties.name, { offset: [0, 16] })
+            .bindTooltip(geoJsonPoint.properties.name, { offset: [0, 0] })
     }
 
     setMarkerLayer(layer, map, zoomToSelection = false) {
