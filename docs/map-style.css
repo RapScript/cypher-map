@@ -6,6 +6,18 @@
     font-size: large;
 }
 
+.leaflet-popup-content h3 {
+    margin-bottom: 0;
+}
+
+.leaflet-popup-content .weekdays {
+    margin-top: 0;
+}
+
+.leaflet-popup-content p {
+    margin: 0.5em 0;
+}
+
 /* Select */
 
 .lh-mp-ctnr form {

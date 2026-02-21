@@ -99,16 +99,56 @@ class MapManager {
         return map
     }
 
-    onEachMapFeature(feature, layer) {
-        const coord = feature.geometry.coordinates
-        const address = '<a onclick="RapScriptHelper.navigate(' + coord[1] + ',' + coord[0] + ')" class="directions-link" title="Route anzeigen">' +
-            '<i class="fa fa-directions"></i></a>'/* +
-            feature.properties.address.split(', ').join('<br>') */
-        // does this feature have a property named popupContent?
-        if (feature.properties && feature.properties.name && feature.properties.description) {
-            layer.bindPopup(
-                '<h3>' + feature.properties.name + '</h3><p>' + feature.properties.description + '</p><p>' + address + '</p>');
+    formatWeekdays(weekdays) {
+        const weekdayMap = {
+            mo: 'Lunedì',
+            tue: 'Martedì',
+            wed: 'Mercoledì',
+            thu: 'Giovedì',
+            fri: 'Venerdì',
+            sa: 'Sabato',
+            so: 'Domenica'
+        };
+        return weekdays.map(d => weekdayMap[d] || d).join(', ');
+    }
+
+    formatSocialLink(url) {
+        try {
+            const parsed = new URL(url);
+            const hostname = parsed.hostname.replace('www.', '');
+            const account = parsed.pathname.split('/').filter(s => s.length > 0)[0];
+
+            let service = hostname;
+            if (hostname === 'instagram.com') service = 'Insta';
+
+            return account ?
+                service + ': <a href="' + url + '" target="_blank">@' + account + '</a>' :
+                '<a href="' + url + '" target="_blank">' + service + '</a>';
+        } catch (e) {
+            return '<a href="' + url + '" target="_blank">' + url + '</a>';
         }
+    }
+
+    formatAddress(address) {
+        return address.replace(', ', '<br>')
+    }
+
+    onEachMapFeature(feature, layer) {
+        if (!feature.properties || !feature.properties.name) return;
+
+        const p = feature.properties;
+        let html = '<h3>' + p.name + '</h3>';
+
+        if (p.weekdays && p.weekdays.length > 0) {
+            html += '<p class="weekdays">' + this.formatWeekdays(p.weekdays) + '</p>';
+        }
+
+        if (p.address) html += '<p class="address">' + this.formatAddress(p.address) + '</p>';
+        else if (p.city) html += '<p class="address">' + p.city + '</p>';
+
+        if (p.url) html += '<p class="link">' + this.formatSocialLink(p.url) + '</p>';
+
+        layer.bindPopup(html);
     }
 
     renderMapMarker(geoJsonPoint, coordinatate) {
@@ -161,7 +201,7 @@ class MapManager {
     applyFilter(filterCategory, zoomToSelection = false) {
 
         const geoLayer = L.geoJSON(this.geoJson, {
-            onEachFeature: this.onEachMapFeature,
+            onEachFeature: (feature, layer) => this.onEachMapFeature(feature, layer),
             pointToLayer: (point, coord) => this.renderMapMarker(point, coord),
             filter: function (feature, layer) {
                 return (feature.info.categories.includes(filterCategory) || filterCategory == 'all')
@@ -202,10 +242,10 @@ class MapManager {
                 const div = L.DomUtil.create('div', 'command');
 
                 let categorySelection = '<form><div class="select-wrapper fa fa-angle-down"><select id="category-selection" name="category">'
-                categorySelection += '<option value="all">Alle</option>'
+                categorySelection += '<option value="all">tutti</option>'
                 for (const catId in this.categories) {
                     let category = this.categories[catId]
-                    categorySelection += '<option value="' + category + '">' + category + '</option>'
+                    categorySelection += '<option value="' + category + '">' + this.formatWeekdays([category]) + '</option>'
                 }
                 categorySelection += '</select></div></form>'
 

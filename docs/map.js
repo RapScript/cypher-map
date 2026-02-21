@@ -26,14 +26,14 @@ class FreestyleRapCypherMap {
         this.mapManager = undefined
         this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
 
-        const resourceVersionTag = '202006121'
+        const resourceVersionTag = '2026-02-21_0'
         const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
         const dataUrl = dataFolder + 'italy.geojson?v=' + resourceVersionTag
         const cssUrl = (this.isLocal ? '' : this.repositoryBaseUrl + 'docs/') + 'map-style.css?v=' + resourceVersionTag
 
-        CypherMapDOMHelper.loadCss(cssUrl)
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
+        CypherMapDOMHelper.loadCss(cssUrl)
         this._init(mapElementId, options, dataFolder, dataUrl, resourceVersionTag)
         // Add cluster css when clustering is enabled.
         if (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number') {
