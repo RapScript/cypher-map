@@ -29,12 +29,13 @@ class FreestyleRapCypherMap {
         const resourceVersionTag = '2026-02-21_1' //+ Math.floor(Math.random() * 100 + 1)
         const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
         const dataUrl = dataFolder + 'italy.geojson?v=' + resourceVersionTag
-        const cssUrl = (this.isLocal ? '' : this.repositoryBaseUrl + 'docs/') + 'map-style.css?v=' + resourceVersionTag
+        const webRootFolder = this.isLocal ? '' : this.repositoryBaseUrl + 'docs/'
+        const cssUrl = webRootFolder + 'map-style.css?v=' + resourceVersionTag
 
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
         CypherMapDOMHelper.loadCss(cssUrl)
-        this._init(mapElementId, options, dataFolder, dataUrl, resourceVersionTag)
+        this._init(mapElementId, options, dataFolder, webRootFolder, dataUrl, resourceVersionTag)
         // Add cluster css when clustering is enabled.
         if (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number') {
             CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css')
@@ -45,11 +46,11 @@ class FreestyleRapCypherMap {
         }
     }
 
-    async _init(mapElementId, options, dataFolder, dataUrl, resourceVersionTag) {
+    async _init(mapElementId, options, dataFolder, webRootFolder, dataUrl, resourceVersionTag) {
         await CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js')
-        await CypherMapDOMHelper.loadScript('includes/MapManager.js?v=' + resourceVersionTag)
+        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/MapManager.js?v=' + resourceVersionTag)
         this.mapManager = new MapManager(mapElementId, options, dataFolder)
-        await CypherMapDOMHelper.loadScript('includes/LocationInfo.js?v=' + resourceVersionTag)
+        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/LocationInfo.js?v=' + resourceVersionTag)
         const response = await fetch(dataUrl)
         this.mapManager.applyGeoData(await response.text())
     }
