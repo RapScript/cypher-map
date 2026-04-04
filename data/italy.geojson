@@ -2,6 +2,24 @@
     "type": "FeatureCollection",
     "features": [
         {
+            "type": "Feature",
+            "properties": {
+                "city": "Trento",
+                "name": "Scala di Trento TEST1",
+                "url": "https://www.instagram.com/scaladitrento",
+                "weekdays": [
+                    "thu"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.1210,
+                    46.0705
+                ]
+            }
+        },
+        {
             "type": "Feature", 
             "properties": {
                 "city": "Fiume Veneto",
