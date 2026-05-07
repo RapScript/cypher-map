@@ -101,13 +101,13 @@ class MapManager {
 
     formatWeekdays(weekdays) {
         const weekdayMap = {
-            mo: 'Lunedì',
+            mon: 'Lunedì',
             tue: 'Martedì',
             wed: 'Mercoledì',
             thu: 'Giovedì',
             fri: 'Venerdì',
-            sa: 'Sabato',
-            so: 'Domenica'
+            sat: 'Sabato',
+            sun: 'Domenica'
         };
         return weekdays.map(d => weekdayMap[d] || d).join(', ');
     }
