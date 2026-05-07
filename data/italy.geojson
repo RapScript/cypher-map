@@ -941,8 +941,8 @@
       "type": "Feature",
       "properties": {
         "city": "Catania",
-        "name": "Panchine Experience",
-        "url": "https://www.instagram.com/panchine_exp",
+        "name": "Vulcania",
+        "url": "https://www.instagram.com/vulcania.ct",
         "weekdays": [
           "tue"
         ]
@@ -1204,6 +1204,150 @@
         "coordinates": [
           11.3308,
           43.3188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Forlì",
+        "name": "Aurelio",
+        "url": "https://www.instagram.com/aurelio.mfc/",
+        "weekdays": [
+          "wed"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0407,
+          44.2227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Viareggio",
+        "name": "Muretto di viareggio freestyle",
+        "url": "https://www.instagram.com/muretto_di_viareggio/",
+        "weekdays": [
+          "tue"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2506,
+          43.8668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Siena",
+        "name": "Il Brodo",
+        "url": "https://www.instagram.com/ilbrodo_siena",
+        "weekdays": [
+          "fri"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3308,
+          43.3188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Chiavari",
+        "name": "Muretto di Chiavari",
+        "url": "https://www.instagram.com/muretto.di.chiavari",
+        "weekdays": [
+          "mon"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3229,
+          44.3173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "San Salvo",
+        "name": "Muretto di San Salvo",
+        "url": "https://www.instagram.com/murettosansalvo",
+        "weekdays": [
+          "thu"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7314,
+          42.0453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Poggio Mirteto",
+        "name": "Muretto Mirto",
+        "url": "https://www.instagram.com/murettomirto",
+        "weekdays": [
+          "fri"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6833,
+          42.2667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ravenna",
+        "name": "Spaceinvaders Ravenna",
+        "url": "https://www.instagram.com/spaceinvaders.ravenna",
+        "weekdays": [
+          "mon"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2035,
+          44.4184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Martina Franca",
+        "name": "Boombeat Cypher",
+        "url": "https://www.instagram.com/boombeat_cypher.mf",
+        "weekdays": [
+          "mon"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3381,
+          40.7021
         ]
       }
     }
