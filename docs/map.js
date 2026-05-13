@@ -24,7 +24,8 @@ class FreestyleRapCypherMap {
     constructor(mapElementId, options = {}) {
         this.isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
         this.mapManager = undefined
-        this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
+        this.repositoryBaseUrl = 'https://raw.githubusercontent.com/rapscript/cypher-map/master/';
+        //this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
 
         const resourceVersionTag = '2026-04-04_10' //+ Math.floor(Math.random() * 100 + 1)
         const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
