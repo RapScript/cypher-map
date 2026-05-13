@@ -35,8 +35,7 @@ class MapManager {
         this.currentCategory = 'all'
         this.map = undefined
         this.isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
-        this.repositoryBaseUrl = 'https://raw.githubusercontent.com/rapscript/cypher-map/master/';
-        //this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
+        this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
         this.markerLayer = undefined
         this.useClustering = (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number')
         // GeoJSON data parsed from .geojson file.
