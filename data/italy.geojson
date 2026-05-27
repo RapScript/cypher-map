@@ -1318,24 +1318,6 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Ravenna",
-        "name": "Spaceinvaders Ravenna",
-        "url": "https://www.instagram.com/spaceinvaders.ravenna",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.2035,
-          44.4184
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "city": "Martina Franca",
         "name": "Boombeat Cypher",
         "url": "https://www.instagram.com/boombeat_cypher.mf",
