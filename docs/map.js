@@ -20,22 +20,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+const _mapScriptSrc = document.currentScript?.src ?? ''
+
 class FreestyleRapCypherMap {
     constructor(mapElementId, options = {}) {
-        this.isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
         this.mapManager = undefined
-        this.repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@master/'
 
-        const resourceVersionTag = '2026-04-04_10' //+ Math.floor(Math.random() * 100 + 1)
-        const dataFolder = (this.isLocal ? '../' : this.repositoryBaseUrl) + 'data/'
-        const dataUrl = dataFolder + 'italy.geojson?v=' + resourceVersionTag
-        const webRootFolder = this.isLocal ? '' : this.repositoryBaseUrl + 'docs/'
-        const cssUrl = webRootFolder + 'map-style.css?v=' + resourceVersionTag
+        const isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
+        const cacheBuster = isLocal ? '?cb=' + Date.now() : '';
+        const versionTag = new URLSearchParams(_mapScriptSrc.split('?')[1]).get('v') ?? '1.0.0'
+        const repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@' + versionTag + '/'
+        const dataFolder = (isLocal ? '../' : repositoryBaseUrl) + 'data/'
+        const webRootFolder = isLocal ? '' : repositoryBaseUrl + 'docs/'
+        const cssUrl = webRootFolder + 'map-style.css'
+
+        console.log('Loading Cypher Map version ' + versionTag + ' from ' + repositoryBaseUrl)
 
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
         CypherMapDOMHelper.loadCss(cssUrl)
-        this._init(mapElementId, options, dataFolder, webRootFolder, dataUrl, resourceVersionTag)
+        this._init(mapElementId, options, dataFolder, webRootFolder, cacheBuster)
         // Add cluster css when clustering is enabled.
         if (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number') {
             CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css')
@@ -46,12 +50,12 @@ class FreestyleRapCypherMap {
         }
     }
 
-    async _init(mapElementId, options, dataFolder, webRootFolder, dataUrl, resourceVersionTag) {
+    async _init(mapElementId, options, dataFolder, webRootFolder, cacheBuster) {
         await CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js')
-        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/MapManager.js?v=' + resourceVersionTag)
+        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/MapManager.js' + cacheBuster)
         this.mapManager = new MapManager(mapElementId, options, dataFolder)
-        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/LocationInfo.js?v=' + resourceVersionTag)
-        const response = await fetch(dataUrl)
+        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/LocationInfo.js' + cacheBuster)
+        const response = await fetch(dataFolder + 'italy.geojson' + cacheBuster)
         this.mapManager.applyGeoData(await response.text())
     }
 }
