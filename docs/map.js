@@ -28,8 +28,8 @@ class FreestyleRapCypherMap {
 
         const isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
         const cacheBuster = isLocal ? '?cb=' + Date.now() : '';
-        const versionTag = new URLSearchParams(_mapScriptSrc.split('?')[1]).get('v') ?? '1.0.0'
-        const repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map@' + versionTag + '/'
+        const versionTag = (_mapScriptSrc.match(/@([^/]+)\//) ?? [])[1]
+        const repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map' + (versionTag ? '@' + versionTag : '') + '/'
         const dataFolder = (isLocal ? '../' : repositoryBaseUrl) + 'data/'
         const webRootFolder = isLocal ? '' : repositoryBaseUrl + 'docs/'
         const cssUrl = webRootFolder + 'map-style.css'
