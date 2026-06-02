@@ -454,6 +454,24 @@
     {
       "type": "Feature",
       "properties": {
+        "city": "Massa",
+        "name": "Borgo Pontos",
+        "url": "https://www.instagram.com/borgopontos_rap",
+        "weekdays": [
+          "mon"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1393,
+          44.0354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "city": "Imperia",
         "name": "Muretto di Imperia",
         "url": "https://www.instagram.com/ligunionevents/",
