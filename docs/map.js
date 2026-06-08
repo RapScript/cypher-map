@@ -20,26 +20,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-const _mapScriptSrc = document.currentScript?.src ?? ''
-
 class FreestyleRapCypherMap {
     constructor(mapElementId, options = {}) {
         this.mapManager = undefined
 
         const isLocal = location.hostname == 'localhost' || location.hostname == '192.168.2.169'
         const cacheBuster = isLocal ? '?cb=' + Date.now() : '';
-        const versionTag = (_mapScriptSrc.match(/@([^/]+)\//) ?? [])[1]
-        const repositoryBaseUrl = 'https://cdn.jsdelivr.net/gh/rapscript/cypher-map' + (versionTag ? '@' + versionTag : '') + '/'
-        const dataFolder = (isLocal ? '../' : repositoryBaseUrl) + 'data/'
-        const webRootFolder = isLocal ? '' : repositoryBaseUrl + 'docs/'
-        const cssUrl = webRootFolder + 'map-style.css'
-
-        console.log('Loading Cypher Map version ' + versionTag + ' from ' + repositoryBaseUrl)
+        const baseUrl = isLocal ? '' : 'https://rapscript.github.io/cypher-map/'
+        const cssUrl = baseUrl + 'map-style.css'
 
         CypherMapDOMHelper.loadCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css')
         CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet@1.6.0/dist/leaflet.css')
         CypherMapDOMHelper.loadCss(cssUrl)
-        this._init(mapElementId, options, dataFolder, webRootFolder, cacheBuster)
+        this._init(mapElementId, options, baseUrl, cacheBuster)
         // Add cluster css when clustering is enabled.
         if (this.clusterZoom !== undefined && typeof (this.clusterZoom) == 'number') {
             CypherMapDOMHelper.loadCss('https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css')
@@ -50,12 +43,12 @@ class FreestyleRapCypherMap {
         }
     }
 
-    async _init(mapElementId, options, dataFolder, webRootFolder, cacheBuster) {
+    async _init(mapElementId, options, baseUrl, cacheBuster) {
         await CypherMapDOMHelper.loadScript('https://unpkg.com/leaflet@1.6.0/dist/leaflet.js')
-        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/MapManager.js' + cacheBuster)
-        this.mapManager = new MapManager(mapElementId, options, dataFolder)
-        await CypherMapDOMHelper.loadScript(webRootFolder + 'includes/LocationInfo.js' + cacheBuster)
-        const response = await fetch(dataFolder + 'italy.geojson' + cacheBuster)
+        await CypherMapDOMHelper.loadScript(baseUrl + 'includes/MapManager.js' + cacheBuster)
+        this.mapManager = new MapManager(mapElementId, options, baseUrl)
+        await CypherMapDOMHelper.loadScript(baseUrl + 'includes/LocationInfo.js' + cacheBuster)
+        const response = await fetch(baseUrl + 'data/italy.geojson' + cacheBuster)
         this.mapManager.applyGeoData(await response.text())
     }
 }

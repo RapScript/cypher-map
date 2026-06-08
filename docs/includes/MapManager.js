@@ -22,7 +22,7 @@ class MapManager {
      * 
      * @throws {Error} If the map element does not exist in the DOM
      */
-    constructor(mapElementId, options = {}, dataFolder = '../data/') {
+    constructor(mapElementId, options = {}, dataFolder = '') {
         // Apply options.
         this.clusterZoom = options.clusterBelowZoom
         this.showLocateButton = (options.showLocateButton === true)
