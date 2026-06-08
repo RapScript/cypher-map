@@ -4,11 +4,65 @@
     {
       "type": "Feature",
       "properties": {
+        "city": "Bolzano",
+        "name": "Alta Quota",
+        "url": "https://www.instagram.com/altaquota_bz",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3548,
+          46.4983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Belluno",
+        "name": "La Galleria",
+        "url": "https://www.instagram.com/la_galleria_freestyle_bl",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2156,
+          46.1394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Morbegno",
+        "name": "Fenice Jam",
+        "url": "https://www.instagram.com/fenice_jam",
+        "weekdays": [
+          "Giovedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5667,
+          46.1333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "city": "Trento",
         "name": "Scala di Trento",
         "url": "https://www.instagram.com/scaladitrento",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -22,18 +76,108 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Fiume Veneto",
-        "name": "Tocai Cypher",
-        "url": "https://www.instagram.com/tocai.cypher",
+        "city": "Lugano",
+        "name": "WRF Lugano",
+        "url": "https://www.instagram.com/wrf.lvgano",
         "weekdays": [
-          "fri"
+          "Sabato"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.7396,
-          45.9302
+          8.9511,
+          46.0037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Fiume Veneto",
+        "name": "Tocai Cypher",
+        "url": "https://www.instagram.com/tocai.cypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7091,
+          45.9508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Varese",
+        "name": "Sanvi Cypher",
+        "url": "https://www.instagram.com/sanvicypher/",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.825,
+          45.8206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Villa Guardia",
+        "name": "Paletto di Como",
+        "url": "https://www.instagram.com/ilpalettodicomo",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0431,
+          45.7889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bassano del Grappa",
+        "name": "Trinità Freestyle Cypher",
+        "url": "https://www.instagram.com/trinita.freestylecypher/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7333,
+          45.7667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bergamo",
+        "name": "Berghem Freestyle",
+        "url": "https://www.instagram.com/berghem_freestyle/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6773,
+          45.6983
         ]
       }
     },
@@ -44,13 +188,13 @@
         "name": "Le Mura Freestyle Treviso",
         "url": "https://www.instagram.com/le.mura.freestyle_treviso",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.2422,
+          12.243,
           45.6669
         ]
       }
@@ -58,18 +202,55 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Paderno Dugnano",
-        "name": "Rappaderno",
-        "url": "https://www.instagram.com/rappaderno.037",
+        "city": "Trieste",
+        "name": "Muretto Trieste",
+        "url": "https://www.instagram.com/trsfreestyle/",
         "weekdays": [
-          "fri"
+          "Martedì",
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.1645,
-          45.568
+          13.7768,
+          45.6495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Monza",
+        "name": "Marsala Bars",
+        "url": "https://www.instagram.com/marsalabars",
+        "weekdays": [
+          "Giovedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2744,
+          45.5845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Paderno Dugano",
+        "name": "Rappaderno",
+        "url": "https://www.instagram.com/rappaderno.037",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.163,
+          45.5687
         ]
       }
     },
@@ -80,13 +261,13 @@
         "name": "Rimerie Vicentine",
         "url": "https://www.instagram.com/rimerievicentine",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5459,
+          11.5354,
           45.5455
         ]
       }
@@ -98,7 +279,7 @@
         "name": "Muretto di Brescia",
         "url": "https://www.instagram.com/muretto_dibrescia",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -113,10 +294,10 @@
       "type": "Feature",
       "properties": {
         "city": "Milano",
-        "name": "Muretto Milano",
+        "name": "Muretto",
         "url": "https://www.instagram.com/muretto.milano",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -130,47 +311,11 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Vigonza",
-        "name": "Boschetto",
-        "url": "https://www.instagram.com/boschetto.mk",
-        "weekdays": [
-          "fri"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.9886,
-          45.4347
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Venezia",
-        "name": "Piramidi Freestyle Cypher",
-        "url": "https://www.instagram.com/piramidifreestylecypher",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.3155,
-          45.4408
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "city": "Verona",
-        "name": "Il Mattone di Verona",
+        "name": "Mattone",
         "url": "https://www.instagram.com/mattone_vr",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -184,11 +329,47 @@
     {
       "type": "Feature",
       "properties": {
+        "city": "Venezia",
+        "name": "Piramidi Cypher",
+        "url": "https://www.instagram.com/piramidifreestylecypher",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3358,
+          45.4375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Vigonza",
+        "name": "Boschetto",
+        "url": "https://www.instagram.com/boschetto.mk",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.956,
+          45.434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "city": "Padova",
         "name": "Fungo Micelio",
         "url": "https://www.instagram.com/fungo.micelio",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
@@ -206,14 +387,14 @@
         "name": "Freesta Rosa Cypher",
         "url": "https://www.instagram.com/freestarosacypher",
         "weekdays": [
-          "tue"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.2775,
-          45.2186
+          12.2766,
+          45.218
         ]
       }
     },
@@ -221,16 +402,16 @@
       "type": "Feature",
       "properties": {
         "city": "Pavia",
-        "name": "PVCypha",
+        "name": "PV Cypha",
         "url": "https://www.instagram.com/tretorripvc",
         "weekdays": [
-          "fri"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.1566,
+          9.1582,
           45.1847
         ]
       }
@@ -242,7 +423,7 @@
         "name": "Il Torrazzo di Cremona",
         "url": "https://www.instagram.com/iltorrazzocr",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -260,7 +441,7 @@
         "name": "Regio Freestyle Torino",
         "url": "https://www.instagram.com/regio_freestyle_torino",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -274,18 +455,36 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Pinerolo",
-        "name": "La Fonte",
-        "url": "https://www.instagram.com/fonte_pinerolo_freestyle_",
+        "city": "Moncalieri",
+        "name": "Il Muretto di Monca",
+        "url": "https://www.instagram.com/ilmurettodimonca",
         "weekdays": [
-          "mon"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.3323,
-          44.885
+          7.6822,
+          44.9997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pinerolo",
+        "name": "La Fonte",
+        "url": "https://www.instagram.com/fonte_pinerolo_freestyle_/",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3313,
+          44.8853
         ]
       }
     },
@@ -296,14 +495,14 @@
         "name": "Freestyle Darsena",
         "url": "https://www.instagram.com/freestyledarsena",
         "weekdays": [
-          "mon"
+          "Lunedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           11.6198,
-          44.8381
+          44.8371
         ]
       }
     },
@@ -314,14 +513,50 @@
         "name": "Il Cerchio",
         "url": "https://www.instagram.com/ilcerchio.pr",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.3279,
+          10.328,
           44.8015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Correggio",
+        "name": "Lo Stop",
+        "url": "https://www.instagram.com/stop.freestyle",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.78,
+          44.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Novi Ligure",
+        "name": "Jericho",
+        "url": "https://www.instagram.com/jerichocypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.79,
+          44.76
         ]
       }
     },
@@ -332,14 +567,32 @@
         "name": "Mureggio Free",
         "url": "https://www.instagram.com/mureggio_free",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           10.63,
-          44.6983
+          44.6979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Modena",
+        "name": "Viali Cypher",
+        "url": "https://www.instagram.com/viali_cypher",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9252,
+          44.6471
         ]
       }
     },
@@ -347,10 +600,10 @@
       "type": "Feature",
       "properties": {
         "city": "Bologna",
-        "name": "Sanfra Bolo",
+        "name": "SANFRA Bolo",
         "url": "https://www.instagram.com/sanfra.bo",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
@@ -364,18 +617,36 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Lugo",
-        "name": "La Loggia",
-        "url": "https://www.instagram.com/loggialugofreestyle",
+        "city": "Genova",
+        "name": "Rosse Cypher",
+        "url": "https://www.instagram.com/rossecypha/",
         "weekdays": [
-          "thu"
+          "Lunedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.9105,
-          44.4214
+          8.7454,
+          44.4283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lugo",
+        "name": "LA LOGGIA",
+        "url": "https://www.instagram.com/loggialugofreestyle",
+        "weekdays": [
+          "Giovedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9135,
+          44.4198
         ]
       }
     },
@@ -383,10 +654,10 @@
       "type": "Feature",
       "properties": {
         "city": "Genova",
-        "name": "Muretto di Genova",
+        "name": "Leaguria",
         "url": "https://www.instagram.com/leaguria/",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -400,18 +671,18 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Genova",
-        "name": "Rosse Cypher",
-        "url": "https://www.instagram.com/rossecypha/",
+        "city": "Faenza",
+        "name": "Manfreda",
+        "url": "https://www.instagram.com/manfredacypher",
         "weekdays": [
-          "mon"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.9339,
-          44.4071
+          11.8836,
+          44.2856
         ]
       }
     },
@@ -422,14 +693,14 @@
         "name": "Fortitudo Mea in Rap",
         "url": "https://www.instagram.com/fortitudo_rap",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.0977,
-          44.0793
+          10.1006,
+          44.0795
         ]
       }
     },
@@ -440,32 +711,14 @@
         "name": "Muretto Santarcangelo",
         "url": "https://www.instagram.com/murettosantarcangelo",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.4463,
-          44.0633
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Massa",
-        "name": "Borgo Pontos",
-        "url": "https://www.instagram.com/borgopontos_rap",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.1393,
-          44.0354
+          12.4424,
+          44.0632
         ]
       }
     },
@@ -476,14 +729,14 @@
         "name": "Muretto di Imperia",
         "url": "https://www.instagram.com/ligunionevents/",
         "weekdays": [
-          "mon"
+          "Lunedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.0306,
-          43.8868
+          8.0395,
+          43.8897
         ]
       }
     },
@@ -494,14 +747,68 @@
         "name": "Muraglia Prato",
         "url": "https://www.instagram.com/muraglia.prato",
         "weekdays": [
-          "fri"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           11.097,
-          43.8777
+          43.8837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Viareggio",
+        "name": "Carnival",
+        "url": "https://www.instagram.com/carnival_freestyle",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.25,
+          43.8667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lucca",
+        "name": "55Centro",
+        "url": "https://www.instagram.com/50cinquecentro",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.502,
+          43.843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pontassieve",
+        "name": "Sieveflow",
+        "url": "https://www.instagram.com/sieveflow",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4312,
+          43.7732
         ]
       }
     },
@@ -512,7 +819,7 @@
         "name": "Giglio",
         "url": "https://www.instagram.com/giglio_fi",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -526,18 +833,18 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Pontassieve",
-        "name": "Sieveflow",
-        "url": "https://www.instagram.com/sieveflow",
+        "city": "Pisa",
+        "name": "Freestyle Pisa",
+        "url": "https://www.instagram.com/muretto.pisa",
         "weekdays": [
-          "wed"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.436,
-          43.7742
+          10.4017,
+          43.7228
         ]
       }
     },
@@ -548,14 +855,14 @@
         "name": "Stadivm Technique",
         "url": "https://www.instagram.com/stadivm_technique",
         "weekdays": [
-          "sun"
+          "Domenica"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.9477,
-          43.7196
+          10.9453,
+          43.7169
         ]
       }
     },
@@ -566,7 +873,7 @@
         "name": "Plaza",
         "url": "https://www.instagram.com/tredueunoplaza",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -580,18 +887,54 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Perugia",
-        "name": "Muretto Perugia",
-        "url": "https://www.instagram.com/muretto.pg",
+        "city": "Livorno",
+        "name": "L’Arena",
+        "url": "https://www.instagram.com/arenafreestylelivorno/",
         "weekdays": [
-          "fri"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.3888,
-          43.1122
+          10.3106,
+          43.5485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Perugia",
+        "name": "Muretto Perugia",
+        "url": "https://www.instagram.com/muretto.pg",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3908,
+          43.1107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Grosseto",
+        "name": "Muretto di Grosseto",
+        "url": "https://www.instagram.com/murettodigrosseto/",
+        "weekdays": [
+          "Domenica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1124,
+          42.7635
         ]
       }
     },
@@ -602,14 +945,14 @@
         "name": "Teramo Cypher",
         "url": "https://www.instagram.com/teramocypher",
         "weekdays": [
-          "fri"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.7035,
-          42.6589
+          13.699,
+          42.6611
         ]
       }
     },
@@ -617,16 +960,16 @@
       "type": "Feature",
       "properties": {
         "city": "Pescara",
-        "name": "FRP Freestyle Reunion",
+        "name": "Freestyle Reunion Pescara",
         "url": "https://www.instagram.com/freestylereunionpescara",
         "weekdays": [
-          "fri"
+          "Venerdì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          14.213,
+          14.2161,
           42.4618
         ]
       }
@@ -638,32 +981,50 @@
         "name": "Barre Faul",
         "url": "https://www.instagram.com/barre_faul",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.1077,
-          42.4207
+          12.1047,
+          42.4178
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "city": "Guidonia",
-        "name": "Alcyone Flow Freestyle",
-        "url": "https://www.instagram.com/alcyoneflowfreestyle",
+        "city": "Vasto",
+        "name": "Muretto Maledetto",
+        "url": "https://www.instagram.com/masta.muretto.vasto.freestyle",
         "weekdays": [
-          "tue"
+          "Lunedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.7229,
-          41.9926
+          14.705,
+          42.1125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Guidonia (Roma)",
+        "name": "Alcyone Flow Freestyle",
+        "url": "https://www.instagram.com/alcyoneflowfreestyle",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.719,
+          41.9936
         ]
       }
     },
@@ -671,10 +1032,10 @@
       "type": "Feature",
       "properties": {
         "city": "Roma",
-        "name": "Ateneo",
+        "name": "ATENEO",
         "url": "https://www.instagram.com/ateneorm",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
@@ -688,18 +1049,54 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Barletta",
-        "name": "Colossus Cypher",
-        "url": "https://www.instagram.com/colossus.cypher",
+        "city": "Foggia",
+        "name": "Fovea Cypher",
+        "url": "https://www.instagram.com/fgcypher",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.2833,
-          41.3183
+          15.5446,
+          41.4622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Barletta",
+        "name": "Colossus Cypher",
+        "url": "https://www.instagram.com/colossus.cypher",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2818,
+          41.319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Benevento",
+        "name": "Il Sabba",
+        "url": "https://www.instagram.com/ilsabba_bn/",
+        "weekdays": [
+          "Domenica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7833,
+          41.1333
         ]
       }
     },
@@ -710,7 +1107,7 @@
         "name": "Rossani Cypher",
         "url": "https://www.instagram.com/rossani.bari",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -728,32 +1125,140 @@
         "name": "Beatonto Cypher",
         "url": "https://www.instagram.com/beatonto_cypher",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.6906,
-          41.1074
+          16.6907,
+          41.1102
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "city": "Brindisi",
-        "name": "Br Cypher",
-        "url": "https://www.instagram.com/brcypher",
+        "city": "Atripalda",
+        "name": "Fattaccio",
+        "url": "https://www.instagram.com/il.fattaccio_av/",
         "weekdays": [
-          "tue"
+          "Mercoledì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.9381,
-          40.6327
+          14.83,
+          40.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pomigliano D'Arco",
+        "name": "Gradoni",
+        "url": "https://www.instagram.com/igradoni.na/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.39,
+          40.91
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Avellino",
+        "name": "Il Macello",
+        "url": "https://www.instagram.com/ilmacello.av/",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.79,
+          40.91
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Fasano",
+        "name": "YKTS Sistema",
+        "url": "https://www.instagram.com/ykts_sistema",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3583,
+          40.8369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Napoli",
+        "name": "A’ Mostr",
+        "url": "https://www.instagram.com/a_mostr.10/",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.19,
+          40.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Brindisino",
+        "name": "BR Cypher",
+        "url": "https://www.instagram.com/brcypher",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.946,
+          40.6394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Salerno",
+        "name": "Scalette Salerno",
+        "url": "https://www.instagram.com/scalettessea/",
+        "weekdays": [
+          "Giovedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.76,
+          40.6
         ]
       }
     },
@@ -764,14 +1269,32 @@
         "name": "Massypher",
         "url": "https://www.instagram.com/massypher",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.1154,
-          40.586
+          17.1138,
+          40.5825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Grottagille",
+        "name": "Ceramicypher",
+        "url": "https://www.instagram.com/ceramicypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.4333,
+          40.5367
         ]
       }
     },
@@ -779,17 +1302,17 @@
       "type": "Feature",
       "properties": {
         "city": "Taranto",
-        "name": "2Mari Cypher",
+        "name": "2MARI Cypher",
         "url": "https://www.instagram.com/2maricypher",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.2505,
-          40.4709
+          17.247,
+          40.4644
         ]
       }
     },
@@ -800,14 +1323,14 @@
         "name": "Tamburi Cypher",
         "url": "https://www.instagram.com/tamburicypher",
         "weekdays": [
-          "sun"
+          "Domenica"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.2288,
-          40.4942
+          17.247,
+          40.4644
         ]
       }
     },
@@ -815,17 +1338,53 @@
       "type": "Feature",
       "properties": {
         "city": "Lecce",
-        "name": "Le Cypher",
+        "name": "Lecce Cypher",
         "url": "https://www.instagram.com/lecce.cypher",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.1718,
+          18.169,
+          40.352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lecce",
+        "name": "Arena Dreher",
+        "url": "https://www.instagram.com/arenadreher",
+        "weekdays": [
+          "Sabato"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.175,
           40.3515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Salento",
+        "name": "Nardò Cypher",
+        "url": "https://www.instagram.com/nardo.cypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1,
+          40.3
         ]
       }
     },
@@ -836,14 +1395,50 @@
         "name": "Cisaypher",
         "url": "https://www.instagram.com/cisaypher",
         "weekdays": [
-          "mon"
+          "Lunedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.8935,
-          40.2593
+          17.8981,
+          40.2653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Taviano",
+        "name": "Gallari Cypher",
+        "url": "https://www.instagram.com/gallaricypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0833,
+          39.9833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Corigliano-Rossano",
+        "name": "Co-Ro Legacy",
+        "url": "https://www.instagram.com/co_ro_legacy_freestyle",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5167,
+          39.6
         ]
       }
     },
@@ -854,14 +1449,14 @@
         "name": "Cosenza Campus Cypher",
         "url": "https://www.instagram.com/cosenzacampuscypher",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.2319,
-          39.3308
+          16.185,
+          39.3334
         ]
       }
     },
@@ -869,16 +1464,16 @@
       "type": "Feature",
       "properties": {
         "city": "Cosenza",
-        "name": "Versum Cosenza",
+        "name": "Versum",
         "url": "https://www.instagram.com/versumcosenza",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.2537,
+          16.2533,
           39.2983
         ]
       }
@@ -887,10 +1482,10 @@
       "type": "Feature",
       "properties": {
         "city": "Cagliari",
-        "name": "Bastione Freestyle",
+        "name": "Bastione",
         "url": "https://www.instagram.com/bastione_freestyle_cagliari",
         "weekdays": [
-          "sun"
+          "Domenica"
         ]
       },
       "geometry": {
@@ -904,18 +1499,36 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Milazzo",
-        "name": "Bonsai Cypher",
-        "url": "https://www.instagram.com/bonsai_cypher",
+        "city": "Catanzaro",
+        "name": "Muretto CZ",
+        "url": "https://www.instagram.com/murettocz",
         "weekdays": [
-          "fri"
+          "Sabato"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          15.238,
-          38.2207
+          16.5877,
+          38.9098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Milazzo",
+        "name": "Bonsai Cypher",
+        "url": "https://www.instagram.com/bonsai_cypher",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2388,
+          38.2177
         ]
       }
     },
@@ -926,7 +1539,7 @@
         "name": "Stretto Cypher",
         "url": "https://www.instagram.com/strettocypher",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -944,7 +1557,7 @@
         "name": "Muster Palermo",
         "url": "https://www.instagram.com/musterpalermo",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
@@ -959,17 +1572,17 @@
       "type": "Feature",
       "properties": {
         "city": "Catania",
-        "name": "Vulcania",
-        "url": "https://www.instagram.com/vulcania.ct",
+        "name": "Panchine Experience",
+        "url": "https://www.instagram.com/panchine_exp",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          15.0873,
-          37.5027
+          15.083,
+          37.5079
         ]
       }
     },
@@ -980,14 +1593,14 @@
         "name": "Trinchera",
         "url": "https://www.instagram.com/trinchera.muretto",
         "weekdays": [
-          "thu"
+          "Giovedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.8546,
-          37.358
+          13.8508,
+          37.3592
         ]
       }
     },
@@ -998,7 +1611,7 @@
         "name": "Underdogs",
         "url": "https://www.instagram.com/underdogs_ag",
         "weekdays": [
-          "wed"
+          "Mercoledì"
         ]
       },
       "geometry": {
@@ -1012,342 +1625,18 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Siracusa",
-        "name": "Muretto Siracusa",
-        "url": "https://www.instagram.com/muretto.siracusa",
-        "weekdays": [
-          "thu"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          15.2866,
-          37.0755
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "city": "Ragusa",
-        "name": "Il Muretto di Ragusa",
-        "url": "https://www.instagram.com/muretto.ragusa",
+        "name": "Heraia",
+        "url": "https://www.instagram.com/heraia.rg/",
         "weekdays": [
-          "tue"
+          "Martedì"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          14.7302,
-          36.9269
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Napoli",
-        "name": "A’ Mostr",
-        "url": "https://www.instagram.com/a_mostr.10/",
-        "weekdays": [
-          "wed"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.2681,
-          40.8518
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Pomigliano d'Arco",
-        "name": "Gradoni",
-        "url": "https://www.instagram.com/igradoni.na/",
-        "weekdays": [
-          "tue"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.3876,
-          40.905
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Livorno",
-        "name": "L’Arena",
-        "url": "https://www.instagram.com/arenafreestylelivorno/",
-        "weekdays": [
-          "wed"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.3106,
-          43.5485
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Bassano del Grappa",
-        "name": "Trinità Freestyle Cypher",
-        "url": "https://www.instagram.com/trinita.freestylecypher/",
-        "weekdays": [
-          "tue"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.7314,
-          45.7663
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Atripalda",
-        "name": "Fattaccio",
-        "url": "https://www.instagram.com/il.fattaccio_av/",
-        "weekdays": [
-          "wed"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.8325,
-          40.9154
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Salerno",
-        "name": "Scalette Salerno",
-        "url": "https://www.instagram.com/scalettessea/",
-        "weekdays": [
-          "thu"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.7681,
-          40.6824
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Benevento",
-        "name": "Il Sabba",
-        "url": "https://www.instagram.com/ilsabba_bn/",
-        "weekdays": [
-          "sun"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.7818,
-          41.1298
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Avellino",
-        "name": "Il Macello",
-        "url": "https://www.instagram.com/ilmacello.av/",
-        "weekdays": [
-          "wed"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.7892,
-          40.9144
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Lucca",
-        "name": "55Centro",
-        "url": "https://www.instagram.com/50cinquecentro",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.5027,
-          43.8429
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Siena",
-        "name": "Il Brodo",
-        "url": "https://www.instagram.com/ilbrodo_siena",
-        "weekdays": [
-          "tue"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.3308,
-          43.3188
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Forlì",
-        "name": "Aurelio",
-        "url": "https://www.instagram.com/aurelio.mfc/",
-        "weekdays": [
-          "wed"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.0407,
-          44.2227
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Viareggio",
-        "name": "Muretto di viareggio freestyle",
-        "url": "https://www.instagram.com/muretto_di_viareggio/",
-        "weekdays": [
-          "tue"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.2506,
-          43.8668
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Siena",
-        "name": "Il Brodo",
-        "url": "https://www.instagram.com/ilbrodo_siena",
-        "weekdays": [
-          "fri"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.3308,
-          43.3188
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Chiavari",
-        "name": "Muretto di Chiavari",
-        "url": "https://www.instagram.com/muretto.di.chiavari",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.3229,
-          44.3173
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "San Salvo",
-        "name": "Muretto di San Salvo",
-        "url": "https://www.instagram.com/murettosansalvo",
-        "weekdays": [
-          "thu"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.7314,
-          42.0453
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Poggio Mirteto",
-        "name": "Muretto Mirto",
-        "url": "https://www.instagram.com/murettomirto",
-        "weekdays": [
-          "fri"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.6833,
-          42.2667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Martina Franca",
-        "name": "Boombeat Cypher",
-        "url": "https://www.instagram.com/boombeat_cypher.mf",
-        "weekdays": [
-          "mon"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.3381,
-          40.7021
+          14.7194,
+          36.9216
         ]
       }
     }
