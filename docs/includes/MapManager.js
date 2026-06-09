@@ -232,6 +232,8 @@ class MapManager {
                 }
             }
         }
+        this.categories = new Array('Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato','Domenica')
+
         console.log(this.categories);
 
         if (this.showCategorySelection !== false && this.categories.length > 0) {
