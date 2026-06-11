@@ -905,6 +905,24 @@
     {
       "type": "Feature",
       "properties": {
+        "city": "Siena",
+        "name": "Il Brodo",
+        "url": "https://www.instagram.com/ilbrodo_siena",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.33065,
+          43.31856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "city": "Perugia",
         "name": "Muretto Perugia",
         "url": "https://www.instagram.com/muretto.pg",
