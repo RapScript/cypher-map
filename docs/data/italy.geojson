@@ -1581,8 +1581,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.3615,
-          38.1157
+          13.36588,
+          38.11123
         ]
       }
     },
@@ -1658,7 +1658,6 @@
         ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -1748,6 +1747,151 @@
           40.7021
         ]
       }
-    }    
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Trapani",
+        "name": "Sale Grosso",
+        "url": "https://www.instagram.com/salegrosso_cypher/",
+        "weekdays": [
+          "Lunedi"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5107,
+          38.0159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Busto Arsizio",
+        "name": "Mure’",
+        "url": "https://www.instagram.com/muretto_di_busto/",
+        "weekdays": [
+          "Giovedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8494,
+          45.6113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Palermo",
+        "name": "Santo",
+        "url": "https://www.instagram.com/santocypher/",
+        "weekdays": [
+          "Venerdì",
+          "Sabato"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.34828,
+          38.13398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Meda",
+        "name": "Medaflow",
+        "url": "https://www.instagram.com/il_muretto_di_meda/",
+        "weekdays": [
+          "Mercoledì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1608,
+          45.6591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Assemini",
+        "name": "Corso Asia Cypher",
+        "url": "https://www.instagram.com/corsoasiacypher/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0025,
+          39.2926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Altamura",
+        "name": "Altamuretto",
+        "url": "https://www.instagram.com/altamuretto/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.55,
+          40.8167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Seregno",
+        "name": "Freestpark",
+        "url": "https://www.instagram.com/freestpark_/",
+        "weekdays": [
+          "Domenica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2014,
+          45.6533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jesi",
+        "name": "Jside Plaza",
+        "url": "https://www.instagram.com/jside_plaza/",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2462,
+          43.5238
+        ]
+      }
+    }
   ]
 }
