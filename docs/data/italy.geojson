@@ -1892,6 +1892,132 @@
           43.5238
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Massa",
+        "name": "Massive Massa",
+        "url": "https://www.instagram.com/massivemassa",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1429,
+          44.0354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Rho",
+        "name": "Rap in Fiera",
+        "url": "https://www.instagram.com/rap_in_fiera/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0405,
+          45.5309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Limbiate",
+        "name": "Tobagi Cypher",
+        "url": "https://www.instagram.com/tobagi_cypher/",
+        "weekdays": [
+          "Sabato"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1247,
+          45.5971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Desio",
+        "name": "RAmPe Desio",
+        "url": "https://www.instagram.com/rampe.desio/",
+        "weekdays": [
+          "Martedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2078,
+          45.6183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Dalmine",
+        "name": "Dalmen",
+        "url": "https://www.instagram.com/dalmen_freestyle/",
+        "weekdays": [
+          "Lunedì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6068,
+          45.6494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Copertino",
+        "name": "Cope Cypher",
+        "url": "https://www.instagram.com/copecypha/",
+        "weekdays": [
+          "Domenica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0481,
+          40.2686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Imperia",
+        "name": "Urban Park",
+        "url": "https://www.instagram.com/im_urbanpark_freestyle/",
+        "weekdays": [
+          "Venerdì"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.03,
+          43.887
+        ]
+      }
     }
   ]
 }
